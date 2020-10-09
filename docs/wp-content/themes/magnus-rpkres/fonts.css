@@ -1,0 +1,72 @@
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Baskerville'), local('Baskerville-Regular'), 
+  url('Fonts/Baskerville/Baskerville.ttf')  format('ttf'),
+  url('Fonts/Baskerville/Baskerville.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Baskerville SemiBold'), local('Baskerville-SemiBold'), 
+  url('Fonts/Baskerville/Baskerville-SemiBold.ttf')  format('ttf'),
+  url('Fonts/Baskerville/Baskerville-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Baskerville Italic'), local('Baskerville-Italic'), 
+  url('Fonts/Baskerville/Baskerville-Italic.ttf')  format('ttf'),
+  url('Fonts/Baskerville/Baskerville-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Baskerville SemiBold Italic'), local('Baskerville-SemiBoldItalic'), 
+  url('Fonts/Baskerville/Baskerville-SemiBoldItalic.ttf')  format('ttf'),
+  url('Fonts/Baskerville/Baskerville-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+
+  src: local('Avenir Next DemiBold'), local('AvenirNext-DemiBold'), 
+  url('Fonts/AvenirNext/AvenirNext-DemiBold.ttf') format('ttf'),
+  url('Fonts/AvenirNext/AvenirNext-DemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Avenir Next Condensed Bold'), local('AvenirNextCondensed-Bold'), 
+  url('Fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.ttf')  format('ttf'),
+  url('Fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MontserratAlt';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Avenir Next Condensed Medium'), local('AvenirNextCondensed-Medium'), 
+url('Fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.ttf')  format('ttf'),
+url('Fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'MontserratAlt';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Avenir Next Condensed Demi Bold'), local('AvenirNextCondensed-DemiBold'), 
+url('Fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.ttf')  format('ttf'),
+url('Fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.woff') format('woff');
+}
