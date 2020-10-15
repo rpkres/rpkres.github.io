@@ -22,12 +22,18 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<div class="site-branding">
-
-                       <h1 class="site-title">
+<h1 class="site-title">
 <a href="../index.html" rel="home" >
-<img src="../wp-content/uploads/sites/10/2020/10/MonogramWborderWx96.png">
+<img src="../wp-content/uploads/sites/10/2020/10/MonogramBfillWx64.png">
 </a>
 </h1>
+<!--
+<img src="/wp/sites/rpkres/wp-content/uploads/sites/10/2020/10/MonogramWfillRx64.png">
+<img src="/wp/sites/rpkres/wp-content/uploads/sites/10/2020/10/MonogramBfillWx64.png">
+<img src="/wp/sites/rpkres/wp-content/uploads/sites/10/2020/10/MonogramBfillWx64.png">
+<img src="/wp/sites/rpkres/wp-content/uploads/sites/10/2020/10/MonogramBfillRx64.png">
+-->
+
 
 		</div><!-- .site-branding -->
 
@@ -43,9 +49,12 @@
 	</header><!-- #masthead -->
 
 
-		<section class="site-header-image">
-			</section><!-- .site-header-image -->
-
+	
+        
+				<!-- height=0 is needed to match posts with image headers -->
+		<section class="site-header-image" style="height: 0px;">
+		</section> <!-- .site-header-image -->
+	
 	<section id="content" class="site-content">
 	
        <div id="primary" class="content-area">
@@ -55,7 +64,10 @@
 		
                 <h2>Last 20 Posts:</h2>
                 <ul>
-                        	<li><a target="new" href='../hello-world/index.html'>Hello world!</a></li>
+                        	<li><a target="new" href='../pretend/index.html'>Pretend</a></li>
+	<li><a target="new" href='../vfx-reel/index.html'>VFX Reel</a></li>
+	<li><a target="new" href='../robota/index.html'>Robota</a></li>
+	<li><a target="new" href='../events/index.html'>Events</a></li>
                 </ul>
 
 		<h2>Archives by Month:</h2>
@@ -65,12 +77,18 @@
 		
 		<h2>All Posts by Date:</h2>
 		<ul>
-				<li><a target="new" href='../hello-world/index.html'>Hello world!</a></li>
+				<li><a target="new" href='../pretend/index.html'>Pretend</a></li>
+	<li><a target="new" href='../vfx-reel/index.html'>VFX Reel</a></li>
+	<li><a target="new" href='../robota/index.html'>Robota</a></li>
+	<li><a target="new" href='../events/index.html'>Events</a></li>
 		</ul>
 
 		<h2>All Posts Alphabetically</h2>
 		<ul>
-				<li><a target="new" href='../hello-world/index.html'>Hello world!</a></li>
+				<li><a target="new" href='../events/index.html'>Events</a></li>
+	<li><a target="new" href='../pretend/index.html'>Pretend</a></li>
+	<li><a target="new" href='../robota/index.html'>Robota</a></li>
+	<li><a target="new" href='../vfx-reel/index.html'>VFX Reel</a></li>
 		</ul>
 
 	</div><!-- #content -->
@@ -94,14 +112,35 @@
 				<input type="submit" class="search-submit" value="Search" />
 			</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
-					<a href="../hello-world/index.html">Hello world!</a>
+					<a href="../pretend/index.html">Pretend</a>
+									</li>
+											<li>
+					<a href="../vfx-reel/index.html">VFX Reel</a>
+									</li>
+											<li>
+					<a href="../robota/index.html">Robota</a>
+									</li>
+											<li>
+					<a href="../events/index.html">Events</a>
 									</li>
 					</ul>
-		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='https://wordpress.org/' rel='external nofollow' class='url'>A WordPress Commenter</a></span> on <a href="../hello-world/index.html#comment-1">Hello world!</a></li></ul></aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2><ul id="recentcomments"></ul></aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
 			<li><a target="new" href='../2020/10/index.html'>October 2020</a></li>
 		</ul>
 		</aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
-	<li class="cat-item cat-item-1"><a href="../category/general/index.html" >General</a>
+	<li class="cat-item cat-item-8"><a href="../category/console-game-development/index.html" >Console Game Development</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/design/index.html" >Design</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/development/index.html" >Development</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/events/index.html" >Events</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../category/software-development/index.html" >Software Development</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/vfx/index.html" >VFX</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/video/index.html" >Video</a>
 </li>
 		</ul>
 </aside>            </div><!-- .widget-area -->
@@ -115,9 +154,10 @@
 
 
 <center>
-<a href="index.html#top" width="64px" height="70px">
+<h1 class="footer-logo">
+<a href="index.html#top"><img src="../wp-content/uploads/sites/10/2020/10/MonogramBx64.png"></a>
+</h1>
 <!-- <img height="64px" src="/wp/sites/rpkres/wp-content/uploads/sites/10/2020/10/MonogramBborderBx64.png"></a> -->
-<img height="64px" src="../wp-content/uploads/sites/10/2020/10/MonogramBx64.png"></a>
 
 <!-- </center> -->
 

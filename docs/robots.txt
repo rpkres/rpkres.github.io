@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /
 #
-# Do not allow facebookexternalhit to access any part of your site
+# Do not allow facebook skum to access any part of your site
 User-agent: facebookexternalhit
 Disallow: /

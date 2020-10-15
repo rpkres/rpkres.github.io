@@ -1,72 +1,93 @@
 
+/*	sub Pika for Karla */
+
 @font-face {
-  font-family: 'Karla';
-  font-style: normal;
+  font-family: 'Pika';
   font-weight: 400;
-  src: local('Baskerville'), local('Baskerville-Regular'), 
-  url('Fonts/Baskerville/Baskerville.ttf')  format('ttf'),
-  url('Fonts/Baskerville/Baskerville.woff') format('woff');
+
+  src: local('Pika'), local('Pike Regular'), local('Pika-Regular'), 
+  url('Fonts/Pika/PikaRegular.ttf')  format('ttf'),
+  url('Fonts/Pika/PikaRegular.otf')  format('opentype'),
+  url('Fonts/Pika/PikaRegular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Karla';
-  font-style: normal;
+  font-family: 'Pika';
   font-weight: 700;
-  src: local('Baskerville SemiBold'), local('Baskerville-SemiBold'), 
-  url('Fonts/Baskerville/Baskerville-SemiBold.ttf')  format('ttf'),
-  url('Fonts/Baskerville/Baskerville-SemiBold.woff') format('woff');
+
+  src: local('Pika Bold'), local('Pika-Bold'), 
+  url('Fonts/Pika/PikaBold.ttf')  format('ttf'),
+  url('Fonts/Pika/PikaBold.otf')  format('opentype'),
+  url('Fonts/Pika/PikaBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Karla';
+  font-family: 'Pika';
   font-style: italic;
   font-weight: 400;
-  src: local('Baskerville Italic'), local('Baskerville-Italic'), 
-  url('Fonts/Baskerville/Baskerville-Italic.ttf')  format('ttf'),
-  url('Fonts/Baskerville/Baskerville-Italic.woff') format('woff');
+
+  src: local('Pika Italic'), local('Pika-Italic'), 
+  url('Fonts/Pika/PikaItalic.ttf')  format('ttf'),
+  url('Fonts/Pika/PikaItalic.otf')  format('opentype'),
+  url('Fonts/Pika/PikaItalic.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Karla';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Baskerville SemiBold Italic'), local('Baskerville-SemiBoldItalic'), 
-  url('Fonts/Baskerville/Baskerville-SemiBoldItalic.ttf')  format('ttf'),
-  url('Fonts/Baskerville/Baskerville-SemiBoldItalic.woff') format('woff');
+  font-family: 'Pika';
+  font-weight: 500;
+  src: local('Pika Beck'), local('Pika-Beck'), 
+  url('Fonts/Pika/PikaBeck.ttf')  format('ttf'),
+  url('Fonts/Pika/PikaBeck.otf')  format('opentype'),
+  url('Fonts/Pika/PikaBeck.woff') format('woff');
 }
 
+/*	sub Kamera for Montserrat	*/
+
 @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
+  font-family: 'Kamera';
+  font-weight: 100;
+
+  src: local('Kamera Thin'), local('Kamera-Thin'),
+  url('Fonts/Kamera/Kamera-Thin.ttf')  format('ttf'),
+  url('Fonts/Kamera/Kamera-Thin.woff') format('woff');
+}
+@font-face {
+  font-family: 'Kamera';
+  font-weight: 300;
+
+  src: local('Kamera Light'), local('Kamera-Light'),
+  url('Fonts/Kamera/Kamera-Light.ttf')  format('ttf'),
+  url('Fonts/Kamera/Kamera-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Kamera';
   font-weight: 400;
 
-  src: local('Avenir Next DemiBold'), local('AvenirNext-DemiBold'), 
-  url('Fonts/AvenirNext/AvenirNext-DemiBold.ttf') format('ttf'),
-  url('Fonts/AvenirNext/AvenirNext-DemiBold.woff') format('woff');
+  src: local('Kamera'), local('Kamera Regular'), local('Kamera-Regular'),
+  url('Fonts/Kamera/Kamera-Regular.ttf')  format('ttf'),
+  url('Fonts/Kamera/Kamera-Regular.woff') format('woff');
 }
+@font-face {
+  font-family: 'Kamera';
+  font-weight: 500;
 
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Avenir Next Condensed Bold'), local('AvenirNextCondensed-Bold'), 
-  url('Fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.ttf')  format('ttf'),
-  url('Fonts/AvenirNextCondensed/AvenirNextCondensed-Bold.woff') format('woff');
+  src: local('Kamera Medium'), local('Kamera-Medium'),
+  url('Fonts/Kamera/Kamera-Medium.ttf')  format('ttf'),
+  url('Fonts/Kamera/Kamera-Medium.woff') format('woff');
 }
+@font-face {
+  font-family: 'Kamera';
+  font-weight: 700;
 
-@font-face {
-  font-family: 'MontserratAlt';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Avenir Next Condensed Medium'), local('AvenirNextCondensed-Medium'), 
-url('Fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.ttf')  format('ttf'),
-url('Fonts/AvenirNextCondensed/AvenirNextCondensed-Medium.woff') format('woff');
+  src: local('Kamera Bold'), local('Kamera-Bold'),
+  url('Fonts/Kamera/Kamera-Bold.ttf')  format('ttf'),
+  url('Fonts/Kamera/Kamera-Bold.woff') format('woff');
 }
 @font-face {
-  font-family: 'MontserratAlt';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Avenir Next Condensed Demi Bold'), local('AvenirNextCondensed-DemiBold'), 
-url('Fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.ttf')  format('ttf'),
-url('Fonts/AvenirNextCondensed/AvenirNextCondensed-DemiBold.woff') format('woff');
+  font-family: 'Kamera';
+  font-weight: 900;
+
+  src: local('Kamera Black'), local('Kamera-Black'),
+  url('Fonts/Kamera/Kamera-Black.ttf')  format('ttf'),
+  url('Fonts/Kamera/Kamera-Black.woff') format('woff');
 }
