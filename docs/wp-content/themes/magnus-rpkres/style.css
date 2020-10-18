@@ -1,8 +1,8 @@
 /*
 Theme Name: magnus-rpkres
-Description: A customized child theme using 'magnus' as the parent theme.
+Description: A heavily modified wp child theme using 'magnus' as the parent.
 Author: rpk
-Author URI: http://www.rodian.net
+Author URI: https://rpkres.github.io
 Template: magnus
 Version: 1.0
 */
@@ -214,13 +214,13 @@ a:hover {
   color: var( --theme-red-1 );
 }
 
-
 .blog-home-content article .entry-header .entry-title a {
   color: var( --theme-white-0 );
 }
 .blog-home-content article .entry-header .entry-title a:hover {
   color: var( --theme-red-1 );
 }
+
 
 .comment-metadata    a,
 .pingback .edit-link a {
@@ -262,7 +262,7 @@ margin-bottom: 14px;
   -webkit-transition: all 0.2s ease;
      -moz-transition: all 0.2s ease;
           transition: all 0.2s ease;
-  transform: scale(0.9) rotate(-22.5deg);
+  transform: scale(1.0) rotate(0deg);
 /*  transform: scale(0.9) rotate(-45deg); */
 /*  transform: scale(0.9); */
 }
@@ -275,7 +275,7 @@ margin-bottom: 14px;
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
-  transform: scale(1.0) rotate(0deg);
+  transform: scale(0.85) rotate(-360.0deg);
 /*  transform: scale(0.90625); */
 /*  transform: scale(1.0); */
 }
@@ -307,9 +307,17 @@ a:any-link {
 .site-header .header-navigation .menu-header-container ul li a:first-letter {
   color: var( --theme-red-1 );
 }
-h1::first-letter {
+h1:first-letter {
   color: var( --theme-red-1 );
 }
+
+/*
+.blog-home-content article .entry-header .entry-title {
+  -webkit-text-stroke: 2px white; 
+  text-stroke: 2px green;
+}
+*/
+
 /*
 .entry-header .entry-title ul li a:first-letter {
   color: green;
@@ -337,7 +345,7 @@ h1:hover:first-letter {
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
-  transform: scale(0.9) rotate(0deg);
+  transform: scale(0.85) rotate(0deg);
 
 /*  transform: scale(0.9) rotate(-45deg); */
 }
@@ -353,7 +361,7 @@ h1:hover:first-letter {
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
-  transform: scale(1.0) rotate(-22.5deg);
+  transform: scale(1.0) rotate(-360.0deg);
 
 }
 
@@ -417,8 +425,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .wp-caption-text {
   font-size: .7em;
-  line-height: .8em;
+  line-height: .9em;
 }
+
+/*	for attachments page, not sure if it will fuck anything else up */
+/*
+.page-content p:last-child, .entry-content p:last-child, .entry-summary p:last-child {
+  text-align: center;
+}
+*/
 
 .my-table-caption-text {
 display: inline-block;
@@ -446,6 +461,27 @@ text-align: center;
 
 .section-inner h1 {
   font-size: 4.0em;
+
+  text-shadow: 
+	-1px -1px 0   var( --home-text-shadow  ),
+	 1px -1px 0   var( --home-text-shadow  ),
+	-1px  1px 0   var( --home-text-shadow  ),
+	 1px  1px 0   var( --home-text-shadow  );
+
+  -webkit-font-smoothing: antialiased;
+
+/*
+-webkit-text-stroke: 2px white; 
+text-stroke: 2px green;
+  text-shadow: 
+0px  0px 2px var( --home-text-shadow2 );
+*/
+/*         
+0px  0px 2px var( --home-text-shadow2 );
+         0px  0px 8px white;
+0 0 3px white, 0 0 1px white, 0 0 1px white; 
+*/
+	
 }
 
 /*
@@ -611,9 +647,34 @@ a:hover, a:focus, a:active {
   animation: fadein 0.3s ease-out 0.5s backwards;
 }
 
+/*
+.blog-home-content article .entry-header {
+  max-width: 50%;
+}
+*/
+/*
+.blog-home-content article .entry-header .entry-title {
+  max-width: 50%;
+}
+*/
+/*
+.blog-home-content article .entry-header {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+*/
+/*	stumble around fixing title bounding box: inteferes with :hover 
+ *	of img
+*/
+.blog-home-content article .section-inner {
+width: 65%;
+transform: translateX(35%) translateY(-50%);
+}
+
 .blog-home-content .section-image {
-  opacity: var( --section-opacity-max ) ;
-  filter: blur( var( --section-blur-min) );
+  opacity: 0.4;
+/*  opacity: var( --section-opacity-max ) ; */
+/*  filter: blur( var( --section-blur-min) ); */
 }
 /*	Almost works when hovering, but user needs to select the text 
 	for the link, and it's not obvious. Fixed, made the section-image
@@ -633,7 +694,7 @@ a:hover, a:focus, a:active {
 
 .blog-home-content .section-image:hover {
   opacity: 0.8;
-  filter: blur( 0 );
+/*  filter: blur( 0 ); */
 }
 
 /*
@@ -919,13 +980,13 @@ code, kbd, tt, var {
 }
 
 /*	matches width of main area for displaying attachments	*/
-
+/*
 img.attachment-medium.size-medium {
   display: block;
   margin: auto;
-/*  max-width: 800px; */
   max-width: 100%;
 }
+*/
 
 
 /*p:first-child:first-letter { */
@@ -1028,4 +1089,8 @@ li > ol {
 /*  --theme-bg-0: 	rgb(245,251,255); */
 /*  --theme-bg-1:		rgb(240,240,244);*/
   --theme-bg-1:		rgb(230,227,223);
+
+  --home-text-shadow:	rgba(0,0,0, 0.3);
+  --home-text-shadow2:	rgba(0,0,0, 0.25);
+
 }
