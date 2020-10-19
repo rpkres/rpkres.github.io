@@ -213,6 +213,15 @@
 ./wp-content/uploads/sites/10/2020/10/MonogramBfillWx512.png
 ./wp-content/uploads/sites/10/2020/10/MonogramBfillWx64.png
 ./wp-content/uploads/sites/10/2020/10/MonogramBfillWx96.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx256-160x160.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx256.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx32.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx48.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx512-160x160.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx512-256x256.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx512.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx64.png
+./wp-content/uploads/sites/10/2020/10/MonogramBRWx96.png
 ./wp-content/uploads/sites/10/2020/10/MonogramBx128.png
 ./wp-content/uploads/sites/10/2020/10/MonogramBx256-160x160.png
 ./wp-content/uploads/sites/10/2020/10/MonogramBx256.png
