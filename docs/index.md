@@ -90,6 +90,11 @@
 ./wp-content/uploads/sites/10/2020/10/Cover-Exec-Summary.420x512-160x160.png
 ./wp-content/uploads/sites/10/2020/10/Cover-Exec-Summary.420x512-256x256.png
 ./wp-content/uploads/sites/10/2020/10/Cover-Exec-Summary.420x512.png
+./wp-content/uploads/sites/10/2020/10/Cover-Executive-Summary-160x160.png
+./wp-content/uploads/sites/10/2020/10/Cover-Executive-Summary-230x256.png
+./wp-content/uploads/sites/10/2020/10/Cover-Executive-Summary.png
+./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal-160x160.png
+./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal-230x256.png
 ./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal.230x280-160x160.png
 ./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal.230x280-230x256.png
 ./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal.230x280-e1602978115915-160x160.png
@@ -99,6 +104,7 @@
 ./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal.420x512-160x160.png
 ./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal.420x512-256x256.png
 ./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal.420x512.png
+./wp-content/uploads/sites/10/2020/10/Cover-Game-Proposal.png
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBborderBx512-160x160.png
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBborderBx512-180x180.png
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBborderBx512-192x192.png

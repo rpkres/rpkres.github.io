@@ -265,13 +265,10 @@ margin-bottom: 14px;
      -moz-transition: all 0.2s ease;
           transition: all 0.2s ease;
   transform: scale(0.8) rotate(0deg);
-/*  transform: scale(0.9) rotate(-45deg); */
-/*  transform: scale(0.9); */
 }
 /* 	scale: 64 * .90625 = 58 
  */
 .site-footer a:hover img {
-/*  opacity: 0.8; */
 /*
 margin-top: 20px;
 margin-bottom: 14px;
@@ -280,8 +277,6 @@ margin-bottom: 14px;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
   transform: scale(0.7) rotate(-360.0deg);
-/*  transform: scale(0.90625); */
-/*  transform: scale(1.0); */
 }
 
 .header-navigation .menu-header-container {
@@ -365,7 +360,7 @@ h1:hover:first-letter {
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
-  transform: scale(1.0) rotate(-360.0deg);
+  transform: scale(0.9) rotate(-360.0deg);
 
 }
 
@@ -611,10 +606,24 @@ a:hover, a:focus, a:active {
     font-size: 1.1em;
   opacity: 1; 
 }
+
+/*	Affects aspect of first article on home page -
+ *	note - there's also a @media handler for small screens
+ */
+.blog-home-content article:first-child {
+    width: 100%;
+    height: 62vh; 
+}
+
 @media (max-width: 800px) {
   .site-footer .footer-navigation {
     width: 80%; 
   }
+.blog-home-content article:first-child,
+.blog-home-content article {
+    width: 100%;
+    height: 50vh; 
+}
 }
 
 
@@ -675,30 +684,21 @@ width: 65%;
 transform: translateX(35%) translateY(-50%);
 }
 
+/*	Hovering over home page section images - handle the top entry
+ *	differently
+ */
+.blog-home-content article:first-child .section-image {
+  opacity: 0.7;
+}
+.blog-home-content article:first-child .section-image:hover {
+  opacity: 0.9;
+}
 .blog-home-content .section-image {
   opacity: 0.4;
-/*  opacity: var( --section-opacity-max ) ; */
-/*  filter: blur( var( --section-blur-min) ); */
 }
-/*	Almost works when hovering, but user needs to select the text 
-	for the link, and it's not obvious. Fixed, made the section-image
-	link to the same place.
-
-	However, the bounds of the title link flip it off.
-*/
-/*
-.blog-home-content article:first-child .section-image:hover {
-    opacity: var( --section-opacity-max );
-    filter: grayscale( var(--section-grayscale-max) ) 
-	    blur( var(--section-blur-min) );
-    transform: scale(1.15); 
-  animation: none !important;
-}
-*/
 
 .blog-home-content .section-image:hover {
   opacity: 0.8;
-/*  filter: blur( 0 ); */
 }
 
 /*
