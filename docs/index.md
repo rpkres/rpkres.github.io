@@ -374,6 +374,12 @@
 ./wp-content/uploads/sites/10/2020/10/Screen-490.cropped.960x597-768x478.jpg
 ./wp-content/uploads/sites/10/2020/10/Screen-490.cropped.960x597-860x535.jpg
 ./wp-content/uploads/sites/10/2020/10/Screen-490.cropped.960x597.jpg
+./wp-content/uploads/sites/10/2020/10/Screen-490.featured-160x160.jpg
+./wp-content/uploads/sites/10/2020/10/Screen-490.featured-256x256.jpg
+./wp-content/uploads/sites/10/2020/10/Screen-490.featured-640x398.jpg
+./wp-content/uploads/sites/10/2020/10/Screen-490.featured-768x478.jpg
+./wp-content/uploads/sites/10/2020/10/Screen-490.featured-860x535.jpg
+./wp-content/uploads/sites/10/2020/10/Screen-490.featured.jpg
 ./wp-content/uploads/sites/10/2020/10/Screen-491.storyeditor.960x597-160x160.jpg
 ./wp-content/uploads/sites/10/2020/10/Screen-491.storyeditor.960x597-256x256.jpg
 ./wp-content/uploads/sites/10/2020/10/Screen-491.storyeditor.960x597-640x398.jpg

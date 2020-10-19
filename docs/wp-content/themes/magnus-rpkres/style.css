@@ -257,12 +257,14 @@ a:hover {
    width: 48px;
   height: 48px;
 */
+/*
 margin-top: 20px;
 margin-bottom: 14px;
+*/
   -webkit-transition: all 0.2s ease;
      -moz-transition: all 0.2s ease;
           transition: all 0.2s ease;
-  transform: scale(1.0) rotate(0deg);
+  transform: scale(0.8) rotate(0deg);
 /*  transform: scale(0.9) rotate(-45deg); */
 /*  transform: scale(0.9); */
 }
@@ -270,12 +272,14 @@ margin-bottom: 14px;
  */
 .site-footer a:hover img {
 /*  opacity: 0.8; */
+/*
 margin-top: 20px;
 margin-bottom: 14px;
+*/
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
-  transform: scale(0.85) rotate(-360.0deg);
+  transform: scale(0.7) rotate(-360.0deg);
 /*  transform: scale(0.90625); */
 /*  transform: scale(1.0); */
 }
@@ -717,29 +721,35 @@ transform: translateX(35%) translateY(-50%);
 }
 @keyframes image-pulse {
   0% {
-    opacity: var( --section-opacity-min );
+/*    opacity: var( --section-opacity-min ); */
     filter: grayscale( var(--section-grayscale-min) ) 
+            brightness( var(--section-brightness-min) )
 	    blur( var(--section-blur-max) );
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    -o-transform: scale(1.01);
-    transform: scale(1.01); 
+
+    -webkit-transform: scale( var(--section-scale-min) );
+       -moz-transform: scale( var(--section-scale-min) );
+        -ms-transform: scale( var(--section-scale-min) );
+         -o-transform: scale( var(--section-scale-min) );
+            transform: scale( var(--section-scale-min) );
   }
-  60% {
-    opacity: var( --section-opacity-med );
-    filter: grayscale( var(--section-grayscale-min) ) 
-	    blur( var(--section-blur-med) );
+
+  50% {
+    filter: grayscale( var(--section-grayscale-mid) ) 
+            brightness( var(--section-brightness-mid) )
+	    blur( var(--section-blur-mid) );
   }
+
   100% {
-    opacity: var( --section-opacity-max );
+/*    opacity: var( --section-opacity-max ); */
     filter: grayscale( var(--section-grayscale-max) ) 
+            brightness( var(--section-brightness-max) )
 	    blur( var(--section-blur-min) );
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    transform: scale(1.15); 
+
+    -webkit-transform: scale( var(--section-scale-max) );
+       -moz-transform: scale( var(--section-scale-max) );
+        -ms-transform: scale( var(--section-scale-max) );
+         -o-transform: scale( var(--section-scale-max) );
+            transform: scale( var(--section-scale-max) );
   } 
 }
 
@@ -1034,17 +1044,24 @@ li > ol {
 :root {
   --theme-main-width:	820px;
 
-  --section-blur-min:	 6px;
-  --section-blur-med:	10px;
+  --section-blur-min:	 0px;
+  --section-blur-mid:	15px;
   --section-blur-max:	20px;
 
-  --section-opacity-min: 0.25;
-  --section-opacity-med: 0.5;
-  --section-opacity-max: 0.6;
+  --section-opacity-min: 0.5;
+  --section-opacity-mid: 0.5;
+  --section-opacity-max: 0.8;
+
+  --section-brightness-min: 60%;
+  --section-brightness-mid: 70%;
+  --section-brightness-max: 80%;
 
   --section-grayscale-min: 0;
-  --section-grayscale-med: 40%;
-  --section-grayscale-max: 80%;
+  --section-grayscale-mid: 0;
+  --section-grayscale-max: 50%;
+
+  --section-scale-min:	1.01;
+  --section-scale-max:	1.20;
 
   --theme-black-0:	rgb(0,0,0);
   --theme-black-4: 	rgba(0, 0, 0, 0.5);
