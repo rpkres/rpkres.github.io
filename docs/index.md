@@ -23,7 +23,6 @@
 ./robota/robota-executive-summary/index.html
 ./robota/robota-game-proposal/index.html
 ./robota-binder/index.html
-./robots.txt
 ./sig-1996-front/index.html
 ./sig-1997-front/index.html
 ./sig-1998-front/index.html
@@ -120,6 +119,13 @@
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBFborderBx512-270x270.png
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBFborderBx512-32x32.png
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBFborderBx512.png
+./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-1-160x160.png
+./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-1-180x180.png
+./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-1-192x192.png
+./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-1-256x256.png
+./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-1-270x270.png
+./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-1-32x32.png
+./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-1.png
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-160x160.png
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-180x180.png
 ./wp-content/uploads/sites/10/2020/10/cropped-MonogramBRWx512-192x192.png
