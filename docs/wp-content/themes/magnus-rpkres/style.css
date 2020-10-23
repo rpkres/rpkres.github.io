@@ -443,16 +443,14 @@ table {
 /*	custom tables */
 
 .table-pretendlogo {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   text-align: center;
   width: 300px;
   max-width: 100%;
 }
 
 .table-pretendlogo2 {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 700px;
   height: 100px;
   max-width: 100%;
