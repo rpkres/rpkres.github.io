@@ -6,6 +6,7 @@
 ./category/development/index.html
 ./category/events/index.html
 ./category/general/index.html
+./category/pretend/index.html
 ./category/software-development/index.html
 ./category/vfx/index.html
 ./category/video/index.html

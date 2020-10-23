@@ -455,6 +455,7 @@ table {
   height: 100px;
   max-width: 100%;
 }
+.table-pretendlogo tr td,
 .table-pretendlogo2 tr td {
   padding: 0;
 }
