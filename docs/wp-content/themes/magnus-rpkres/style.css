@@ -434,6 +434,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 */
 
+/*
+table {
+  width: 256px;
+}
+*/
+
+/*	custom tables */
+
+.table-pretendlogo {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 300px;
+  max-width: 100%;
+}
+
+.table-pretendlogo2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 100px;
+  max-width: 100%;
+}
+.table-pretendlogo2 tr td {
+  padding: 0;
+}
+
 .my-table-caption-text {
 display: inline-block;
 line-height: 1.4em;
