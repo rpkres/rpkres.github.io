@@ -223,15 +223,11 @@ a:hover {
   padding: 0;
 }
 
-/*
-.blog-home-content article .entry-header .entry-title a::first-letter {
-  color: green !important;
-}
-*/
 
 /*	NOTE - need 'display: inline-block' otherwise first-letter wont work
  */
 .blog-home-content article .entry-header .entry-title a {
+font-size: 1.25em;
   display: inline-block;
     color: var( --theme-white-0 );
 }
@@ -389,6 +385,14 @@ h1:hover:first-letter {
 
 /*	COLORS		*/
 
+h1:first-letter {
+
+display: inline-block;
+font-size: 300%;
+  letter-spacing: 0.02em;
+  color: var( --theme-red-1 );
+}
+
 h1, h2, h3, h4, h5, h6, form button,
 form input[type="button"],
 form input[type="reset"],
@@ -496,13 +500,14 @@ text-align: center;
 .content-area h2 {
 /*font-weight: 300;*/
   margin-top: 2em;
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 /*	Home page - first entry, others are half the size */
 
 .section-inner h1 {
   font-size: 4.0em;
 
+/*
   text-shadow: 
 	-1px -1px 0   var( --home-text-shadow  ),
 	 1px -1px 0   var( --home-text-shadow  ),
@@ -510,6 +515,7 @@ text-align: center;
 	 1px  1px 0   var( --home-text-shadow  );
 
   -webkit-font-smoothing: antialiased;
+*/
 
 }
 
@@ -970,9 +976,9 @@ h4 a, h5 a, h6 a {
   margin-top: -1em;
   text-transform: uppercase;
 }
+/*  margin-left: 1.0em; */
 .events-summary:before {
-<!--  margin-left: 1.0em; -->
-  margin-left: 0.0em;
+  margin-left: 0.2em;
   content: "";
 }
 .events-summary:after {
@@ -1131,6 +1137,8 @@ li > ol {
   --theme-red-4:    	rgb(188,  88,  96);
   --theme-red-5:	rgb(212,  99, 108);
   --theme-red-6: 	rgb(216,  76,  54);
+
+  --theme-red-7:	rgb(153,  21,   0);
 
   --button-bg-1:	rgb(242, 239, 235);  /* 95% */
   --button-bg-2:	rgba(0, 0, 0, 0.15);  
