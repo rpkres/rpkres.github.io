@@ -475,10 +475,28 @@ table {
   height: 100px;
   max-width: 100%;
 }
+
+.table-events {
+  margin: auto;
+  width: 786px;
+  max-width: 100%;
+}
+
+.table-events tr td {
+  text-align: center;
+  line-height: 2.0em;
+  vertical-align: top;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.table-events tr td,
 .table-pretendlogo tr td,
 .table-pretendlogo2 tr td {
   padding: 0;
 }
+
+/* maybe able to nuke	*/
 
 .my-table-caption-text {
 display: inline-block;
@@ -605,6 +623,9 @@ a:hover, a:focus, a:active {
   font-family: "Kamera", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+}
+.site-header .header-navigation a:hover {
+  color: var( --theme-white-0 );
 }
 
 .sidebar .main-navigation {
@@ -1036,6 +1057,12 @@ code, kbd, tt, var {
   padding: 0.2962962963em 0.8em;
 }
 
+
+.attachment-medium.size-medium {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
 /*	matches width of main area for displaying attachments	*/
 /*
 img.attachment-medium.size-medium {
@@ -1113,10 +1140,15 @@ li > ol {
   --theme-black-0:	rgb(0,0,0);
   --theme-black-4: 	rgba(0, 0, 0, 0.5);
 
-  --theme-white-0:	rgb(255, 255, 255);
-  --theme-white-2:	rgb(243, 243, 243);
-  --theme-white-3: 	rgb(230, 230, 230);
-  --theme-white-4: 	rgba(255, 255, 255, 0.6);
+/*  --theme-white-0:	rgb(255, 255, 255); */
+/*  --theme-white-2:	rgb(243, 243, 243); */
+/*  --theme-white-3: 	rgb(230, 230, 230); */
+/*  --theme-white-4: 	rgba(255, 255, 255, 0.6); */
+
+  --theme-white-0:	rgb(255, 253, 247);	/* same as theme-bg-0 */
+  --theme-white-2:	rgb(242, 240, 234);	/* 95% L */
+  --theme-white-3: 	rgb(230, 228, 222);	/* 90% L */
+  --theme-white-4: 	rgba(255, 253, 247, 0.6);
 
   --theme-grey-1:	rgb( 65,  65,  65);
   --theme-grey-2: 	rgb(169, 169, 169);
@@ -1143,18 +1175,7 @@ li > ol {
   --button-bg-1:	rgb(242, 239, 235);  /* 95% */
   --button-bg-2:	rgba(0, 0, 0, 0.15);  
 
-/*  --theme-bg-0: 	rgb(255,255,255);		*/
-/*  --theme-bg-0: 	rgb(239,232,220);		*/
-/*  --theme-bg-0: 	rgb(255,248,235);		*/
-/*  --theme-bg-0: 	rgb(255,248,235); */ /* 8% */
-/*  --theme-bg-0: 	rgb(255,250,240); */ /* 6% */
-/*  --theme-bg-0: 	rgb(255,253,247);		*/
-/*  --theme-bg-0: 	rgb(255,252,245); */ /* 4% */
-/*  --theme-bg-0: 	rgb(220,232,239);		*/
-/*  --theme-bg-0: 	rgb(235,248,255);		*/
-/*  --theme-bg-0: 	rgb(245,251,255);		*/
-/*  --theme-bg-1:	rgb(240,240,244);		*/
-
+  --theme-bg-0: 	rgb(255,253,247);
   --theme-bg-1:		rgb(230,227,223);
 
   --home-text-shadow:	rgba(0,0,0, 0.3);
