@@ -1,8 +1,12 @@
 ./2020/10/index.html
+./2020/10/page/2/index.html
+./2020/10/page/3/index.html
+./2020/10/page/4/index.html
 ./about/index.html
 ./archives/index.html
 ./category/console-game-development/index.html
 ./category/design/index.html
+./category/design/page/2/index.html
 ./category/development/index.html
 ./category/events/index.html
 ./category/general/index.html
@@ -10,6 +14,9 @@
 ./category/software-development/index.html
 ./category/vfx/index.html
 ./category/video/index.html
+./category/video/page/2/index.html
+./category/video/page/3/index.html
+./entries/index.html
 ./events/index.html
 ./events/ldc-1999-front/index.html
 ./events/ldc-2001-front/index.html
@@ -30,6 +37,9 @@
 ./pa-story-c/index.html
 ./pa-story-d/index.html
 ./pa-welcome/index.html
+./page/2/index.html
+./page/3/index.html
+./page/4/index.html
 ./pretend/index.html
 ./pretend/psappmac-512x512/index.html
 ./pretendlogob-820x300/index.html
