@@ -624,6 +624,10 @@
 ./wp-content/uploads/sites/10/2020/10/SIG-1998-Front-Small.jpg
 ./wp-content/uploads/sites/10/2020/10/SIG-1998-Front.jpg
 ./wp-content/uploads/sites/10/2020/10/Transparent-32x01.gif
+./wp-content/uploads/sites/10/2020/11/robota.820x417-256x256.jpg
+./wp-content/uploads/sites/10/2020/11/robota.820x417-768x391.jpg
+./wp-content/uploads/sites/10/2020/11/robota.820x417-820x417.jpg
+./wp-content/uploads/sites/10/2020/11/robota.820x417.jpg
 ./wp-includes/fonts/dashicons.eot
 ./wp-includes/fonts/dashicons.svg
 ./wp-includes/fonts/dashicons.ttf

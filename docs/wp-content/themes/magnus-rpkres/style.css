@@ -285,6 +285,7 @@ font-size: 1.25em;
 
 .site-footer .site-info li {
   font-size: 0.65em;
+  padding-bottom: 3em;
 }
 
 .site-footer {
@@ -949,6 +950,10 @@ transform: translateX( 40% ) translateY(-50%);
     padding: 0 0 1em 0.4444444444em; 
 }
 
+video {
+  display: block;
+  max-width: 100%;
+}
 
 /*	menu-header size
  */
@@ -964,37 +969,57 @@ transform: translateX( 40% ) translateY(-50%);
   text-transform: uppercase;
   line-height: 1; 
 }
-.next, .prev {
 /*  font-size: 0.85em !important; */
+/*  letter-spacing: 0.15em !important; */
+.next, .prev {
   font-size: 1em !important;
-  letter-spacing: 0.15em !important;
-}
-a.prev.page-numbers {
-  padding-left: 0;
-  padding-right: 2em;
-  text-align: left;
-}
-a.next.page-numbers {
-  padding-left: 2em;
-  padding-right: 0;
-  text-align: right;
+  letter-spacing: 0.10em !important;
 }
 
+.nav-links {
+width: 100%;
+/*display: inline-block;*/
+/*display: block; */
+}
+/* #### */
+/* make the prev/next text almost invisible when not links */
+span.prev.page-numbers,
+span.next.page-numbers {
+/*  color: var( --theme-grey-2 ); */
+/*  color: var( --theme-grey-2a ); */
+/*  color: var( --theme-white-2 ); */
+  color: var( --theme-bg-0 );
+}
+span.prev.page-numbers,
+a.prev.page-numbers {
+/*float: left;*/
+/*width: 30%;*/
+  padding-left: 1.0em;
+  padding-right: 4em;
+  text-align: left;
+}
+span.next.page-numbers,
+a.next.page-numbers {
+/*float: right;*/
+/*width: 30%;*/
+  padding-left: 4em;
+  padding-right: 1.0em;
+  text-align: right;
+}
 a.page-numbers {
   font-size: 1.25em;
   letter-spacing: 0.5em;
   padding-left: 0.5em;
   text-align: center;
 }
+/*  color: var( --theme-grey-2 ); */
 span.page-numbers.current {
   font-size: 1.5em;
   letter-spacing: 0.5em;
   padding-left: 0.5em;
+  color: var( --theme-bg-5 );
 }
 
-.page-numbers {
-  letter-spacing: 10px;
-}
 
 /*
 .site-main a {
@@ -1032,6 +1057,7 @@ h4 a, h5 a, h6 a {
 
 .navigation.pagination {
   padding-top: 2.0em;
+/*  padding-top: 1.0em; */
   margin: 0 auto;
   display: block;
   max-width: var( --theme-main-width );
@@ -1234,6 +1260,11 @@ li > ol {
 
   --theme-bg-0: 	rgb(255,253,247);
   --theme-bg-1:		rgb(230,227,223);
+  --theme-bg-2:		rgb(204,201,198);
+  --theme-bg-3:		rgb(191,189,185);
+  --theme-bg-4:		rgb(166,164,160);
+  --theme-bg-5:		rgb(140,138,136);
+  --theme-bg-6:		rgb(128,126,123);
 
   --home-text-shadow:	rgba(0,0,0, 0.3);
   --home-text-shadow2:	rgba(0,0,0, 0.25);
