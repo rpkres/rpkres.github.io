@@ -1,33 +1,10 @@
-/*
-Theme Name: magnus-rpkres
-Description: A heavily modified wp child theme using 'magnus' as the parent.
-Author: rpk
-Author URI: https://rpkres.github.io
-Template: magnus
-Version: 1.0
-*/
+
 
 @import url("fonts.css");
 @import url("../magnus/style.css");
 
-/*
 
-	1280 * .55 =	704.0
-			704.0 + (16 * 2) = 736
 
-	1280 * 0.6 = 	768.0
-			768.0 + (16 *2) = 800.0
-
-	1280 * .625 =	800.0 
-			800.0 + (16 *2) = 832.0
-
-	1280 * .65 = 	832.0
-			832.0 + (16 * 2) = 864.0
-
- */
-/*
-  max-width: 864px;
-*/
 
 .content-area {
   max-width: var( --theme-main-width );
@@ -41,19 +18,8 @@ margin-bottom: 2em;
 
 }
 
-/* 	TYPOGRAPHY
- *
- *	1.0   em = 16px
- *	1.125 em = 18px		line-height: 1.5 = 
- *	1.25  em = 20px		line-height: 1.4 = 28px
- *				line-height: 1.5 = 30px
- *
- */
-/*	
- *	form border-box over-rides
- *
- *	https://css-tricks.com/box-sizing/
- */
+
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -70,10 +36,7 @@ input[type="search"] {
   box-sizing: border-box; 
   border-radius: 5px;
 }
-/*      
- *      For getting a cancel button to show in the search text field
- *      and possibly fixes iOS rounded fucking border-radius
- */
+
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
   border-radius: 5px;
@@ -88,18 +51,13 @@ textarea {
   background-color: var( --theme-bg-0 );
   color: var( --theme-black-0 );
   font-family: "Pika", serif;
-/*  font-size: 1.125em; */
-/*  font-size: 1.25em; */
+
+
   font-size: 1.125em;
   line-height: 1.4;
 }
 
-/*	Insert a '·' char before/after previous and next links
- *
- *	"❮" "❯" "·"  
- *
- *	Also search for .page-numbers
- */
+
 .nav-previous, .nav-next {
   font-size: 1.25em;
 }
@@ -110,20 +68,8 @@ textarea {
   content: " ❯";
 }
 
-/*
-.nav-links .prev,
-.nav-links .next {
-  font-size: 1.125em;
-}
-*/
-/*
-.nav-links .prev::before {
-  content: "❮style_";
-}
-.nav-links .next::after {
-  content: "_style❯";
-}
-*/
+
+
 
 
 .entry-header .entry-meta, .entry-footer {
@@ -152,11 +98,7 @@ blockquote {
   line-height: 1.4;
 }
 
-/*
-.site-branding h2 {
-    font-family: "Pika", serif;
-}
-*/
+
 
 
 
@@ -208,11 +150,7 @@ a:hover, a:focus, a:active {
   color: var( --theme-grey-1 );
 }
 
-/*
-a:hover {
-  cursor: pointer;
-}
-*/
+
 
 
 .sidebar-toggled .sidebar-toggle:hover span:before, 
@@ -239,14 +177,13 @@ a:hover {
 
 
 .blog-home-content article .entry-header {
-/*display: block;*/
+
   margin: 0;
   padding: 0;
 }
 
 
-/*	NOTE - need 'display: inline-block' otherwise first-letter wont work
- */
+
 .blog-home-content article .entry-header .entry-title a {
 font-size: 1.25em;
   display: inline-block;
@@ -300,27 +237,17 @@ font-size: 1.25em;
   color: var( --theme-red-1 );
 }
 .site-footer a img {
-/*  opacity: 1.0; */
-/*
-   width: 48px;
-  height: 48px;
-*/
-/*
-margin-top: 20px;
-margin-bottom: 14px;
-*/
+
+
+
   -webkit-transition: all 0.2s ease;
      -moz-transition: all 0.2s ease;
           transition: all 0.2s ease;
   transform: scale(0.8) rotate(0deg);
 }
-/* 	scale: 64 * .90625 = 58 
- */
+
 .site-footer a:hover img {
-/*
-margin-top: 20px;
-margin-bottom: 14px;
-*/
+
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
@@ -342,14 +269,10 @@ margin-bottom: 14px;
   height: 64px;
 }
 
-/*	I'm not sure about this for iOS */
-/*
-a:any-link {
-  cursor: pointer;
-}
-*/
 
-/*	Just the first letter menu in the header bar */
+
+
+
 
 .site-header .header-navigation .menu-header-container ul li a::first-letter {
   opacity: 0.95;
@@ -363,16 +286,12 @@ a:any-link {
 }
 
 
-/*
-h1:first-letter {
-  color: var( --theme-red-1 );
-}
-*/
+
 
 .site-branding h1 a,
 .site-title a img {
 
-/*  filter: grayscale(0%) brightness(120%); */
+
   opacity: 0.8;
 
   -webkit-transition: all 0.4s ease;
@@ -380,12 +299,12 @@ h1:first-letter {
           transition: all 0.4s ease;
   transform: scale(0.85) rotate(0deg);
 
-/*  transform: scale(0.9) rotate(-45deg); */
+
 }
 
-/* margins are width2 - (width1) / 2 */
 
-/*.site-title a:hover img { */
+
+
 .site-branding h1 a:hover,
 .site-title a:hover img {
 
@@ -399,13 +318,9 @@ h1:first-letter {
 }
 
 
-/*
-h1:hover:first-letter {
-  color: red;
-}
-*/
 
-/*	COLORS		*/
+
+
 
 h1:first-letter {
 
@@ -424,14 +339,7 @@ form input[type="submit"], .comment-form label {
   text-decoration: none;
 }
 
-/*
- * 	font weights:	100   		(thin)
- *			300   		(light)
- *			400 = normal
- *			500   (medium)
- *			700 = bold
- *			900   (black)
- */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Kamera", sans-serif;
   letter-spacing: 0.2em; 
@@ -469,20 +377,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: .9em;
 }
 
-/*	for attachments page, not sure if it will fuck anything else up */
-/*
-.page-content p:last-child, .entry-content p:last-child, .entry-summary p:last-child {
-  text-align: center;
-}
-*/
 
-/*
-table {
-  width: 256px;
-}
-*/
 
-/*	custom tables */
+
+
+
+
 
 .table-pretendlogo {
   margin: auto;
@@ -518,7 +418,7 @@ table {
   padding: 0;
 }
 
-/* maybe able to nuke	*/
+
 
 .my-table-caption-text {
 display: inline-block;
@@ -531,40 +431,27 @@ text-align: center;
   text-transform: uppercase;
 }
 
-/*	on posts and pages	*/
+
 
 .content-area h1 {
   font-size: 2.0em;
 }
 
 .content-area h2 {
-/*font-weight: 300;*/
+
   margin-top: 2em;
   font-size: 1.75em;
 }
-/*	Home page - first entry, others are half the size */
+
 
 .section-inner h1 {
   font-size: 4.0em;
 
-/*
-  text-shadow: 
-	-1px -1px 0   var( --home-text-shadow  ),
-	 1px -1px 0   var( --home-text-shadow  ),
-	-1px  1px 0   var( --home-text-shadow  ),
-	 1px  1px 0   var( --home-text-shadow  );
 
-  -webkit-font-smoothing: antialiased;
-*/
 
 }
 
-/*
-.section-inner
-.site-main h1 {
-  font-size: 4.0em;
-}
-*/
+
 
 @media (max-width: 480px) {
   .site-main h1 {
@@ -572,44 +459,14 @@ text-align: center;
   } 
 }
 
-/*
-@media (min-width: 1100px) {
-*/
-/*
-@media (min-width: 900px) {
-  .site-main h1 {
-    font-size: 4em;
-  }
-}
-*/
 
-/*
-.site-header .header-navigation .menu-header-container ul li a:first-letter {
-*/
 
-/*
-.site-main .section .section-inner .entry-header h1 a:first-letter {
-.blog-home-content article .entry-header .entry-title a:first-letter {
-.site-main section .section-inner .entry-header h1 a:first-letter {
-.blog-home-content article .entry-header .entry-title a:first-letter {
-*/
-/*
-.site-main h1:first-letter a:visited {
-  color: yellow;
-}
-.site-main h1:first-letter a:hover,
-.site-main h1:first-letter a:focus,
-.site-main h1:first-letter a:active {
-  color: cyan;
-}
-*/
-/*
-a{
-}
-a:visited {
-a:hover, a:focus, a:active {
-}
-*/
+
+
+
+
+
+
 
 @media (min-width: 900px) {
   .site-main h1, .site-main h2 {
@@ -628,15 +485,8 @@ a:hover, a:focus, a:active {
   background: rgb(0,0,0);
 }
 
-/*
- * 	font weights:	100 = thin
- *			300 = light
- *			400 = regular
- *			500 = medium
- *			700 = bold
- *			900 = black
- */
-/*	Header menu */
+
+
 
 .site-header .header-navigation a {
   color: var( --theme-white-4 );
@@ -646,7 +496,7 @@ a:hover, a:focus, a:active {
   font-weight: 500;
   text-transform: uppercase;
 }
-/*  color: var( --theme-red-1 ); */
+
 .site-header .header-navigation a:hover {
   color: var( --theme-white-0 );
 }
@@ -666,17 +516,10 @@ a:hover, a:focus, a:active {
   font-weight: 400;
 }
 
-/*	rpk - additional menu bar in the footer
- */
+
 .site-footer .footer-navigation {
-/*
-  position: absolute;
-  display: block;
-*/
-/*
-  right: 0;
-  width: 70%;
-*/
+
+
   text-align: center;
   font-family: "Kamera", sans-serif;
   font-weight: 500;
@@ -687,28 +530,15 @@ a:hover, a:focus, a:active {
   opacity: 1; 
 }
 
-/*	Affects aspect of first article on home page -
- *	note - there's also a @media handler for small screens
- *
- *	16:9 = 56.25vh
- *	 3:2 = 66.66vh
- *	 4:3 = 75.00vh
- */
+
 .blog-home-content article:first-child {
     width: 100%;
     height: 66.66vh;
 }
 
-/*
-@media (max-width: 800px) {
-  .site-header .header-navigation {
-      width: 80%; 
-  }
-}
-*/
 
-/*	Override the display: none of the menu bar in the parent theme
- */
+
+
 @media (max-width: 800px) {
   .site-header .header-navigation .menu-header-container {
         display: block; 
@@ -736,14 +566,14 @@ a:hover, a:focus, a:active {
 
 
 
-/*	footer menu		*/
+
 
 .site-footer .footer-navigation a {
     display: block;
     width: 100%;
     font-size: 0.8em;
-/*    font-size: 0.66em;	*/
-/*    font-size: 0.6666666667em; */
+
+
     letter-spacing: 0.1316872428em;
     color: var( --theme-black-4 );
     text-decoration: none; 
@@ -752,8 +582,8 @@ a:hover, a:focus, a:active {
   text-transform: uppercase;
 }
 .site-footer .footer-navigation a:hover {
-/*    color: var( --theme-black-0 ); */
-/*    color: #000; */
+
+
     color: var( --theme-black-0 );
 }
 
@@ -768,43 +598,18 @@ a:hover, a:focus, a:active {
   animation: fadein 0.3s ease-out 0.5s backwards;
 }
 
-/*
-.blog-home-content article .entry-header {
-  max-width: 50%;
-}
-*/
-/*
-.blog-home-content article .entry-header .entry-title {
-  max-width: 50%;
-}
-*/
-/*
-.blog-home-content article .entry-header {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-*/
-/*	stumble around fixing title bounding box: inteferes with :hover 
- *	of img
-width: 65%;
-transform: translateX(35%) translateY(-50%);
-transform: translateX( calc(100% - 40%) ) translateY(-50%);
-*/
+
+
+
+
 
 .blog-home-content article .entry-header {
   margin-left: auto;
   margin-right: auto;
 }
-/*
-.blog-home-content article .section-inner {
-width: 60%;
-transform: translateX( 40% ) translateY(-50%);
-}
-*/
 
-/*	Hovering over home page section images - handle the top entry
- *	differently
- */
+
+
 .blog-home-content article:first-child .section-image {
   opacity: 0.7;
 }
@@ -819,26 +624,9 @@ transform: translateX( 40% ) translateY(-50%);
   opacity: 0.8;
 }
 
-/*
-.entry-header .entry-title a:hover {
-  filter: blur( 1px );
-}
-*/
 
-/*
-@-webkit-keyframes image-pulse {
-  0% {
-    -webkit-transform: scale(1.01); }
-  100% {
-    -webkit-transform: scale(1.15); } 
-}
-@-moz-keyframes image-pulse {
-  0% {
-    -moz-transform: scale(1.01); }
-  100% {
-    -moz-transform: scale(1.15); } 
-}
-*/
+
+
 @keyframes image-pulse {
   0% {
        -webkit-filter: var( --pulseImage-Filter-N );
@@ -890,43 +678,31 @@ transform: translateX( 40% ) translateY(-50%);
 }
 
 
-/* 
- *	'Featured' image area
- */
+
 .site-header-image {
   -webkit-animation: fadein 1.2s ease-out backwards;
   -moz-animation: fadein 1.2s ease-out backwards;
   animation: fadein 1.2s ease-out backwards;
 }
 
-/* don't rotate single page header images	*/
 
-/*
-.site-header-image .section-image {
-*/
+
+
 .site-header-image .section-image {
   animation: fadein-images 1s ease-out backwards, 
 	     pulseHeader 15s ease-in-out infinite alternate;
 }
 
 .site-footer .footer-navigation .menu-footer-container .footer-logo {
-/*
-    -webkit-animation: fadein 0.3s ease-out 1s backwards;
-    -moz-animation: fadein 0.3s ease-out 1s backwards;
-    animation: fadein 0.3s ease-out 1s backwards;
-*/
-/*
-    -webkit-animation: fadein 0.3s ease-out 1.0s backwards;
-    -moz-animation: fadein 0.3s ease-out 1.0s backwards;
-    animation: fadein 0.3s ease-out 1.0s backwards;
-*/
+
+
     -webkit-animation: fadein 0.3s ease-out 0.5s backwards;
     -moz-animation: fadein 0.3s ease-out 0.5s backwards;
     animation: fadein 0.3s ease-out 0.5s backwards;
     position: relative;
-/*    right: 3.375em; */
+
     opacity: 1;
-/*    z-index: 200;  */
+
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
     transition-property: opacity;
@@ -953,7 +729,7 @@ transform: translateX( 40% ) translateY(-50%);
     list-style: none;
     margin: 0;
     padding-left: 0;
-/*    text-align: right; */
+
     text-align: center;
     line-height: 0; 
 }
@@ -983,8 +759,7 @@ video {
   max-width: 100%;
 }
 
-/*	menu-header size
- */
+
 
 
 .next, .prev,
@@ -992,13 +767,13 @@ video {
   display: inline-block;
   text-decoration: none;
   font-family: "Kamera", sans-serif;
-/*  font-size: 0.85em; */
+
   clear: both;
   text-transform: uppercase;
   line-height: 1; 
 }
-/*  font-size: 0.85em !important; */
-/*  letter-spacing: 0.15em !important; */
+
+
 .next, .prev {
   font-size: 1em !important;
   letter-spacing: 0.10em !important;
@@ -1006,30 +781,30 @@ video {
 
 .nav-links {
 width: 100%;
-/*display: inline-block;*/
-/*display: block; */
+
+
 }
-/* #### */
-/* make the prev/next text almost invisible when not links */
+
+
 span.prev.page-numbers,
 span.next.page-numbers {
-/*  color: var( --theme-grey-2 ); */
-/*  color: var( --theme-grey-2a ); */
-/*  color: var( --theme-white-2 ); */
+
+
+
   color: var( --theme-bg-0 );
 }
 span.prev.page-numbers,
 a.prev.page-numbers {
-/*float: left;*/
-/*width: 30%;*/
+
+
   padding-left: 1.0em;
   padding-right: 4em;
   text-align: left;
 }
 span.next.page-numbers,
 a.next.page-numbers {
-/*float: right;*/
-/*width: 30%;*/
+
+
   padding-left: 4em;
   padding-right: 1.0em;
   text-align: right;
@@ -1040,7 +815,7 @@ a.page-numbers {
   padding-left: 0.5em;
   text-align: center;
 }
-/*  color: var( --theme-grey-2 ); */
+
 span.page-numbers.current {
   font-size: 1.5em;
   letter-spacing: 0.5em;
@@ -1049,26 +824,17 @@ span.page-numbers.current {
 }
 
 
-/*
-.site-main a {
-  text-decoration: none;
-}
-*/
-/*	lists in main window area (not upper menu)
- */
+
+
 .site-main li a {
   font-family: "Kamera", sans-serif;
 font-style: thin;
   font-size: 1.2em;
-/*  font-weight: bold; */
+
   text-transform: uppercase;
   text-decoration: none;
 }
-/*
-.site-main h4 {
-  text-decoration: none;
-}
-*/
+
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
   text-decoration: none;
@@ -1085,7 +851,7 @@ h4 a, h5 a, h6 a {
 
 .navigation.pagination {
   padding-top: 2.0em;
-/*  padding-top: 1.0em; */
+
   margin: 0 auto;
   display: block;
   max-width: var( --theme-main-width );
@@ -1095,20 +861,20 @@ h4 a, h5 a, h6 a {
 .events-details ul {
   margin-top: 1.0em;
   margin-left: -0.6em;
-  margin-bottom: 3.0em;			/* at end of expansion */
+  margin-bottom: 3.0em;			
 }
 
 .events-summary {
   color: var( --theme-grey-6 );
-/*  font-family: "Kamera", sans-serif; */
+
   font-family: "Pika", serif;
-/* font-style: italic; */
+
   font-weight: 400;
   font-size: 0.8em;
   margin-top: -1em;
   text-transform: uppercase;
 }
-/*  margin-left: 1.0em; */
+
 .events-summary:before {
   margin-left: 0.2em;
   content: "";
@@ -1121,12 +887,7 @@ h4 a, h5 a, h6 a {
 
 
 
-/*
-//  margin: 0 0 2.25em;
-//  padding: 0 0 2.25em;
-//  border-bottom: 4px solid #f3f3f4;
-  border-bottom: 4px solid var( --theme-white-2 );
-*/
+
 .post-navigation, .hentry {
    margin: 0 0 0.75em;
   padding: 0 0 0.75em;
@@ -1138,25 +899,11 @@ h4 a, h5 a, h6 a {
   border-bottom: 2px solid var( --theme-grey-2 );
 }
 
-/*
- *	Keep the upper menu bar on screen for portrait on phones
- */
-/*
-@media (max-width: 480px) {
-.site-header .header-navigation {
-      width: 70%; 
-  }
-}
-*/
-/*
-media (max-width: 880px) {
-.site-header .header-navigation .menu-header-container {
-	display: block; 
-  }
-}
-*/
 
-/* rpk additions */
+
+
+
+
 
 .bigger {
   font-size: larger;
@@ -1174,35 +921,19 @@ code, kbd, tt, var {
   margin: auto;
   max-width: 100%;
 }
-/*	matches width of main area for displaying attachments	*/
-/*
-img.attachment-medium.size-medium {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-}
-*/
 
 
-/*p:first-child:first-letter { */
-/*  float: left; */
-/*  font-weight: bold; */
-/*  font-family: "Kamera", sans-serif; */
-/*  padding-right: 4px; */
-/*  padding-left: 3px; */
-/*
-p:first-letter {
-  font-size: 200%;
-  line-height: 1;
-  padding-top: 2px;
-}
-*/
 
-/*
-p {
-  margin-bottom: 1.5em;
-}
-*/
+
+
+
+
+
+
+
+
+
+
 
 li {
   margin-bottom: 1em;
@@ -1217,27 +948,15 @@ li > ol {
 
 
 
-/* =Global */
 
-/* 
- * 	Variables for use with color schemes
- *		used via:
- *	
- *		color: var( --theme-white-3 );
- *
- *	Using Roman Numerals for animation names, zero only came along
- *	during the Medieval period, some people used 'N' for nil.
- *
- *		N = 0
- *		L = 50
- *		C = 100
- */
+
+
 
 :root {
   --theme-main-width:	820px;
 
   
-/*  --section-blur-N:	0.00em; */
+
   --section-blur-N:	2.00em;
   --section-blur-L:	2.00em;
   --section-blur-C:	0.10em;
@@ -1248,12 +967,12 @@ li > ol {
 
   --section-brightness-N: 140%;
   --section-brightness-L: 120%;
-/*  --section-brightness-C: 80%;*/
+
   --section-brightness-C: 100%;
 
   --section-saturate-N: 140%;
   --section-saturate-L: 100%;
-/*  --section-saturate-C: 60%; */
+
   --section-saturate-C: 100%;
 
   --section-huerotate-N: 330.0deg;
@@ -1264,8 +983,8 @@ li > ol {
   --section-grayscale-C: 40%;
 
   --section-zoom-N:	1.4;
-/*  --section-zoom-C:	1.20; */
-/*  --section-zoom-C:	1.01; */
+
+
   --section-zoom-C:	1.1;
 
   --section-rotate-N:	 3deg;
@@ -1297,37 +1016,32 @@ li > ol {
   --pulseHeader-transform-N:   scale( var(--section-zoom-N) );
   --pulseHeader-transform-C:   scale( var(--section-zoom-C) );
 
-/*
---section-xlateX-N:	20%;
---section-xlateX-C:	0;
---section-xlateY-N:	5%;
---section-xlateY-C:	0;
-*/
+
 
 
   --theme-black-0:	rgb(0,0,0);
   --theme-black-4: 	rgba(0, 0, 0, 0.5);
 
-/*  --theme-white-0:	rgb(255, 255, 255); */
-/*  --theme-white-2:	rgb(243, 243, 243); */
-/*  --theme-white-3: 	rgb(230, 230, 230); */
-/*  --theme-white-4: 	rgba(255, 255, 255, 0.6); */
 
-  --theme-white-0:	rgb(255, 253, 247);	/* same as theme-bg-0 */
-  --theme-white-2:	rgb(242, 240, 234);	/* 95% L */
-  --theme-white-3: 	rgb(230, 228, 222);	/* 90% L */
+
+
+
+
+  --theme-white-0:	rgb(255, 253, 247);	
+  --theme-white-2:	rgb(242, 240, 234);	
+  --theme-white-3: 	rgb(230, 228, 222);	
   --theme-white-4: 	rgba(255, 253, 247, 0.6);
 
   --theme-grey-1:	rgb( 65,  65,  65);
   --theme-grey-2: 	rgb(169, 169, 169);
   --theme-grey-2a: 	rgba(169, 169, 169, 0.4);
 
-/*   --theme-grey-3:	rgb(185, 185, 191); 		*/
+
   --theme-grey-3:	rgb(126, 126, 128);
   --theme-grey-4:	rgb(114, 114, 126);
-/*   --theme-grey-5:	rgb( 67,  67,  83); 		*/
+
   --theme-grey-5:	rgb( 64,  64,  76);
-/*   --theme-grey-6:	rgb(217, 217, 220); 		*/
+
   --theme-grey-6:	rgb(126, 126, 128);
 
   --theme-red-1: 	rgb(216,  30,   0);
@@ -1340,7 +1054,7 @@ li > ol {
 
   --theme-red-7:	rgb(153,  21,   0);
 
-  --button-bg-1:	rgb(242, 239, 235);  /* 95% */
+  --button-bg-1:	rgb(242, 239, 235);  
   --button-bg-2:	rgba(0, 0, 0, 0.15);  
 
   --theme-bg-0: 	rgb(255,253,247);

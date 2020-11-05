@@ -1,53 +1,5 @@
-/*
-Theme Name: Magnus
-Theme URI: http://thefivethemes.com/themes/magnus
-Author: Hugo Baeta
-Author URI: http://thefivethemes.com
-Description: Life is Grand, Show it! Magnus is a photoblogging WordPress theme named after the latin word for Grand. It was made to showcase photos in a big and bold way, making the featured image on each post span the full width of the browser window, paired up with beautiful typography and a carefully planned layout.
-Version: 2.4
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: magnus
-Tags: photoblogging, custom-header, custom-menu, featured-images, featured-image-header, threaded-comments, translation-ready, responsive-layout, one-column
 
-Magnus WordPress Theme, Copyright (C) 2013-2016, Hugo Baeta.
-Magnus is distributed under the terms of the GNU GPL license.
 
-Magnus is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Theme screenshot uses photography by Will Langenberg, from unsplash.com
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-    ## Links
-    ## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Content
-    ## Header
-    ## Header Feature Image
-    ## Posts and pages
-    ## Home
-    ## Archive
-    ## Asides
-    ## Comments
-    ## Footer
-    ## 404
-# Sidebar
-    ## Widgets
-# Infinite scroll
-# Media
-    ## Captions
-    ## Galleries
---------------------------------------------------------------*/
 @-webkit-keyframes image-pulse {
   0% {
     -webkit-transform: scale(1.01); }
@@ -124,9 +76,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0); } }
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -303,9 +253,7 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
+
 body,
 button,
 input,
@@ -426,9 +374,7 @@ mark, ins {
 big {
   font-size: 125%; }
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
+
 html {
   box-sizing: border-box; }
 
@@ -440,24 +386,24 @@ body {
 *,
 *:before,
 *:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  
   box-sizing: inherit; }
 
 ::selection {
-  /* WebKit/Blink Browsers */
+  
   background: #ed7d86;
   color: #fdf1f2;
   text-shadow: 0 1px 1px #bc5860; }
 
 ::-moz-selection {
-  /* Gecko Browsers */
+  
   background: #ed7d86;
   color: #fdf1f2;
   text-shadow: 0 1px 1px #bc5860; }
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+   }
 
 blockquote, q {
   quotes: "" ""; }
@@ -492,9 +438,9 @@ dd {
 
 img {
   height: auto;
-  /* Make sure images are scaled correctly. */
+  
   max-width: 100%;
-  /* Adhere to container width. */ }
+   }
 
 table {
   margin: 0 0 1.5em;
@@ -507,9 +453,7 @@ table {
     border-bottom: 1px solid rgba(20, 20, 40, 0.03);
     padding: 0.1975308642em 0.4444444444em; }
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
+
 form button,
 form input[type="button"],
 form input[type="reset"],
@@ -627,12 +571,8 @@ textarea {
   .post-password-form input[type="submit"] {
     display: block; }
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
+
+
 a {
   color: #eb6e78;
   -webkit-transition-property: color, text-decoration, opacity;
@@ -662,12 +602,8 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/*--------------------------------------------------------------
-## Sidebar Toggle Button
---------------------------------------------------------------*/
-/* 
-**  Sidebar Toggle 
-*/
+
+
 .no-js .sidebar-toggle {
   display: none; }
 
@@ -852,9 +788,7 @@ a {
     -moz-animation: fadein 0.3s ease-out 0.4s backwards;
     animation: fadein 0.3s ease-out 0.4s backwards; }
 
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
+
 .nav-menu {
   padding: 0;
   margin: 0;
@@ -1009,10 +943,8 @@ a {
   padding-left: 1em;
   text-align: left; }
 
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
+
+
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -1037,11 +969,9 @@ a {
     top: 5px;
     width: auto;
     z-index: 100000;
-    /* Above WP toolbar. */ }
+     }
 
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
+
 .alignleft {
   display: inline;
   float: left;
@@ -1064,9 +994,7 @@ blockquote.alignleft {
 blockquote.alignright {
   margin-right: 0; }
 
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
+
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -1090,16 +1018,12 @@ blockquote.alignright {
 .site-footer:after {
   clear: both; }
 
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
+
 .site {
   position: relative;
   width: 100vw; }
 
-/*--------------------------------------------------------------
-## Header
---------------------------------------------------------------*/
+
 .site-header {
   position: relative;
   top: 0;
@@ -1155,9 +1079,7 @@ blockquote.alignright {
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
 
-/*--------------------------------------------------------------
-## Header Feature Image
---------------------------------------------------------------*/
+
 .site-header-image {
   -webkit-animation: fadein 2s ease-out backwards;
   -moz-animation: fadein 2s ease-out backwards;
@@ -1196,9 +1118,7 @@ blockquote.alignright {
     .content-area {
       font-size: 1.286em; } }
 
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
+
 .sticky {
   display: block; }
 
@@ -1270,9 +1190,7 @@ blockquote.alignright {
   .post-navigation a {
     text-decoration: none; }
 
-/*--------------------------------------------------------------
-## Home
---------------------------------------------------------------*/
+
 .blog-home-content .site-main {
   overflow: hidden;
   background: #141428; }
@@ -1352,9 +1270,7 @@ blockquote.alignright {
   margin: 1em auto 0;
   max-width: 38.443359375em; }
 
-/*--------------------------------------------------------------
-## Archive
---------------------------------------------------------------*/
+
 .archive .page-header,
 .search-results .page-header {
   padding: 2.25em 1em 4.34025em;
@@ -1376,12 +1292,8 @@ blockquote.alignright {
     .search-results .page-header .page-description p {
       margin: 0.4444444444em 0 0; }
 
-/*--------------------------------------------------------------
-## Asides
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
+
+
 .comments-area {
   margin: 5.0625em 0 2.25em; }
 
@@ -1526,9 +1438,7 @@ blockquote.alignright {
   border-bottom: 4px solid #f3f3f4;
   padding: 1em 0; }
 
-/*--------------------------------------------------------------
-## Footer
---------------------------------------------------------------*/
+
 .site-footer {
   padding: 1em 1em 1.286em;
   margin: 2.25em 0 0;
@@ -1552,9 +1462,7 @@ blockquote.alignright {
     .site-footer a:hover {
       color: #eb6e78; }
 
-/*--------------------------------------------------------------
-## 404
---------------------------------------------------------------*/
+
 .error404 {
   background: #eb6e78; }
   .error404 .site-main {
@@ -1625,9 +1533,7 @@ blockquote.alignright {
   bottom: 0;
   width: 100%; }
 
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
+
 .sidebar {
   position: fixed;
   width: 100%;
@@ -1725,44 +1631,38 @@ blockquote.alignright {
   -moz-transition: opacity, 0.5s, ease-out, 1.2s;
   transition: opacity, 0.5s, ease-out, 1.2s; }
 
-/*--------------------------------------------------------------
-## Widgets
---------------------------------------------------------------*/
+
 .widget {
   margin: 0;
   padding: 2.25em 0;
   font-size: 0.8573333333em;
   color: #72727e;
   text-shadow: 0 1px 2px #f3f3f4;
-  /* Make sure select elements fit in widgets. */ }
+   }
   .widget select, .widget input {
     max-width: 100%; }
   @media (max-width: 480px) {
     .widget {
       padding: 1.5em 0; } }
 
-/* Search widget. */
+
 .widget_search .search-field {
   width: 100%; }
 .widget_search .search-submit {
   display: none; }
 
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
+  
   display: none; }
 
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
 .infinity-end.neverending .site-footer {
   display: block; }
 
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
+
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -1771,7 +1671,7 @@ blockquote.alignright {
   margin-top: 0;
   padding: 0; }
 
-/* Make sure embeds and iframes fit their containers. */
+
 embed,
 iframe,
 object {
@@ -1780,9 +1680,7 @@ object {
 figure {
   margin: 1em 0; }
 
-/*--------------------------------------------------------------
-12.1 Captions
---------------------------------------------------------------*/
+
 .wp-caption {
   margin-bottom: 1em;
   max-width: 100%; }
@@ -1801,9 +1699,7 @@ figure {
   text-transform: none;
   text-align: center; }
 
-/*--------------------------------------------------------------
-12.2 Galleries
---------------------------------------------------------------*/
+
 .gallery {
   margin-bottom: 1.5em; }
 
