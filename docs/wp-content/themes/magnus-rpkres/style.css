@@ -825,6 +825,7 @@ transform: translateX( 40% ) translateY(-50%);
 }
 */
 
+/*
 @-webkit-keyframes image-pulse {
   0% {
     -webkit-transform: scale(1.01); }
@@ -837,37 +838,54 @@ transform: translateX( 40% ) translateY(-50%);
   100% {
     -moz-transform: scale(1.15); } 
 }
+*/
 @keyframes image-pulse {
   0% {
-/*    opacity: var( --section-opacity-min ); */
-    filter: grayscale( var(--section-grayscale-min) ) 
-            brightness( var(--section-brightness-min) )
-	    blur( var(--section-blur-max) );
+       -webkit-filter: var( --pulseImage-Filter-N );
+          -moz-filter: var( --pulseImage-Filter-N );
+            -o-filter: var( --pulseImage-Filter-N );
+               filter: var( --pulseImage-Filter-N );
 
-    -webkit-transform: scale( var(--section-scale-min) );
-       -moz-transform: scale( var(--section-scale-min) );
-        -ms-transform: scale( var(--section-scale-min) );
-         -o-transform: scale( var(--section-scale-min) );
-            transform: scale( var(--section-scale-min) );
+    -webkit-transform: var( --pulseImage-transform-N );
+       -moz-transform: var( --pulseImage-transform-N );
+         -o-transform: var( --pulseImage-transform-N );
+            transform: var( --pulseImage-transform-N );
   }
-
-  50% {
-    filter: grayscale( var(--section-grayscale-mid) ) 
-            brightness( var(--section-brightness-mid) )
-	    blur( var(--section-blur-mid) );
-  }
-
   100% {
-/*    opacity: var( --section-opacity-max ); */
-    filter: grayscale( var(--section-grayscale-max) ) 
-            brightness( var(--section-brightness-max) )
-	    blur( var(--section-blur-min) );
+       -webkit-filter: var( --pulseImage-Filter-C );
+          -moz-filter: var( --pulseImage-Filter-C );
+            -o-filter: var( --pulseImage-Filter-C );
+               filter: var( --pulseImage-Filter-C );
 
-    -webkit-transform: scale( var(--section-scale-max) );
-       -moz-transform: scale( var(--section-scale-max) );
-        -ms-transform: scale( var(--section-scale-max) );
-         -o-transform: scale( var(--section-scale-max) );
-            transform: scale( var(--section-scale-max) );
+    -webkit-transform: var( --pulseImage-transform-C );
+       -moz-transform: var( --pulseImage-transform-C );
+         -o-transform: var( --pulseImage-transform-C );
+            transform: var( --pulseImage-transform-C );
+  } 
+}
+
+@keyframes pulseHeader {
+  0% {
+       -webkit-filter: var( --pulseHeader-Filter-N );
+          -moz-filter: var( --pulseHeader-Filter-N );
+            -o-filter: var( --pulseHeader-Filter-N );
+               filter: var( --pulseHeader-Filter-N );
+
+    -webkit-transform: var( --pulseHeader-transform-N );
+       -moz-transform: var( --pulseHeader-transform-N );
+         -o-transform: var( --pulseHeader-transform-N );
+            transform: var( --pulseHeader-transform-N );
+  }
+  100% {
+       -webkit-filter: var( --pulseHeader-Filter-C );
+          -moz-filter: var( --pulseHeader-Filter-C );
+            -o-filter: var( --pulseHeader-Filter-C );
+               filter: var( --pulseHeader-Filter-C );
+
+    -webkit-transform: var( --pulseHeader-transform-C );
+       -moz-transform: var( --pulseHeader-transform-C );
+         -o-transform: var( --pulseHeader-transform-C );
+            transform: var( --pulseHeader-transform-C );
   } 
 }
 
@@ -879,6 +897,16 @@ transform: translateX( 40% ) translateY(-50%);
   -webkit-animation: fadein 1.2s ease-out backwards;
   -moz-animation: fadein 1.2s ease-out backwards;
   animation: fadein 1.2s ease-out backwards;
+}
+
+/* don't rotate single page header images	*/
+
+/*
+.site-header-image .section-image {
+*/
+.site-header-image .section-image {
+  animation: fadein-images 1s ease-out backwards, 
+	     pulseHeader 15s ease-in-out infinite alternate;
 }
 
 .site-footer .footer-navigation .menu-footer-container .footer-logo {
@@ -1196,29 +1224,86 @@ li > ol {
  *		used via:
  *	
  *		color: var( --theme-white-3 );
+ *
+ *	Using Roman Numerals for animation names, zero only came along
+ *	during the Medieval period, some people used 'N' for nil.
+ *
+ *		N = 0
+ *		L = 50
+ *		C = 100
  */
 
 :root {
   --theme-main-width:	820px;
 
-  --section-blur-min:	 0px;
-  --section-blur-mid:	15px;
-  --section-blur-max:	20px;
+  
+/*  --section-blur-N:	0.00em; */
+  --section-blur-N:	2.00em;
+  --section-blur-L:	2.00em;
+  --section-blur-C:	0.10em;
 
-  --section-opacity-min: 0.5;
-  --section-opacity-mid: 0.5;
-  --section-opacity-max: 0.8;
+  --section-opacity-N: 0.5;
+  --section-opacity-L: 0.6;
+  --section-opacity-C: 0.8;
 
-  --section-brightness-min: 60%;
-  --section-brightness-mid: 70%;
-  --section-brightness-max: 80%;
+  --section-brightness-N: 140%;
+  --section-brightness-L: 120%;
+/*  --section-brightness-C: 80%;*/
+  --section-brightness-C: 100%;
 
-  --section-grayscale-min: 0;
-  --section-grayscale-mid: 0;
-  --section-grayscale-max: 50%;
+  --section-saturate-N: 140%;
+  --section-saturate-L: 100%;
+/*  --section-saturate-C: 60%; */
+  --section-saturate-C: 100%;
 
-  --section-scale-min:	1.01;
-  --section-scale-max:	1.20;
+  --section-huerotate-N: 330.0deg;
+  --section-huerotate-C: 360.0deg;
+
+  --section-grayscale-N: 0;
+  --section-grayscale-L: 0;
+  --section-grayscale-C: 40%;
+
+  --section-zoom-N:	1.4;
+/*  --section-zoom-C:	1.20; */
+/*  --section-zoom-C:	1.01; */
+  --section-zoom-C:	1.1;
+
+  --section-rotate-N:	 3deg;
+  --section-rotate-C:	-3deg;
+
+  --pulseImage-Filter-N:    saturate( var(--section-saturate-N)   ) 
+	    		  hue-rotate( var(--section-huerotate-N)  )
+            		  brightness( var(--section-brightness-N) )
+	          	        blur( var(--section-blur-N)       );
+
+  --pulseImage-Filter-C:    saturate( var(--section-saturate-C)   ) 
+	    		  hue-rotate( var(--section-huerotate-C)  )
+            		  brightness( var(--section-brightness-C) )
+	          	        blur( var(--section-blur-C)       );
+
+  --pulseHeader-Filter-N:   saturate( var(--section-saturate-N)   ) 
+            		  brightness( var(--section-brightness-N) )
+	          	        blur( var(--section-blur-N)       );
+
+  --pulseHeader-Filter-C:   saturate( var(--section-saturate-C)   ) 
+            		  brightness( var(--section-brightness-C) )
+	          	        blur( var(--section-blur-C)       );
+
+  --pulseImage-transform-N:    scale( var(--section-zoom-N)   )
+		              rotate( var(--section-rotate-N) );
+  --pulseImage-transform-C:    scale( var(--section-zoom-C)   )
+		              rotate( var(--section-rotate-C) );
+
+  --pulseHeader-transform-N:   scale( var(--section-zoom-N) );
+  --pulseHeader-transform-C:   scale( var(--section-zoom-C) );
+
+/*
+--section-xlateX-N:	20%;
+--section-xlateX-C:	0;
+--section-xlateY-N:	5%;
+--section-xlateY-C:	0;
+*/
+
 
   --theme-black-0:	rgb(0,0,0);
   --theme-black-4: 	rgba(0, 0, 0, 0.5);
