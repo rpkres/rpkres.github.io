@@ -958,8 +958,11 @@ li > ol {
   
 
   --section-blur-N:	2.00em;
-  --section-blur-L:	2.00em;
-  --section-blur-C:	0.10em;
+  --section-blur-L:	1.50em;
+  --section-blur-C:	0.00em;
+
+  --section-header-blur-N: var( --section-blur-N );
+  --section-header-blur-C: 0.25em;
 
   --section-opacity-N: 0.5;
   --section-opacity-L: 0.6;
@@ -982,10 +985,11 @@ li > ol {
   --section-grayscale-L: 0;
   --section-grayscale-C: 40%;
 
-  --section-zoom-N:	1.4;
+  --section-zoom-N:	1.5;
 
 
-  --section-zoom-C:	1.1;
+
+  --section-zoom-C:	1.08;
 
   --section-rotate-N:	 3deg;
   --section-rotate-C:	-3deg;
@@ -1002,11 +1006,11 @@ li > ol {
 
   --pulseHeader-Filter-N:   saturate( var(--section-saturate-N)   ) 
             		  brightness( var(--section-brightness-N) )
-	          	        blur( var(--section-blur-N)       );
+	          	        blur( var(--section-header-blur-N));
 
   --pulseHeader-Filter-C:   saturate( var(--section-saturate-C)   ) 
             		  brightness( var(--section-brightness-C) )
-	          	        blur( var(--section-blur-C)       );
+	          	        blur( var(--section-header-blur-C));
 
   --pulseImage-transform-N:    scale( var(--section-zoom-N)   )
 		              rotate( var(--section-rotate-N) );
