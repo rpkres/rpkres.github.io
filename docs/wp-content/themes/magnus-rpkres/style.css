@@ -297,7 +297,7 @@ font-size: 1.25em;
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
-  transform: scale(0.85) rotate(0deg);
+           transform: scale(0.85) rotate(0deg);
 
 
 }
@@ -313,7 +313,7 @@ font-size: 1.25em;
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
-  transform: scale(0.9) rotate(-360.0deg);
+           transform: scale(0.9) rotate(-360.0deg);
 
 }
 
@@ -589,13 +589,13 @@ text-align: center;
 
 .site-header .header-navigation .menu-header-container {
     -webkit-animation: fadein 0.3s ease-out 0.5s backwards;
-    -moz-animation: fadein 0.3s ease-out 0.5s backwards;
-    animation: fadein 0.3s ease-out 0.5s backwards;
+       -moz-animation: fadein 0.3s ease-out 0.5s backwards;
+            animation: fadein 0.3s ease-out 0.5s backwards;
 }
 .site-branding {
   -webkit-animation: fadein 0.3s ease-out 0.5s backwards;
-  -moz-animation: fadein 0.3s ease-out 0.5s backwards;
-  animation: fadein 0.3s ease-out 0.5s backwards;
+     -moz-animation: fadein 0.3s ease-out 0.5s backwards;
+          animation: fadein 0.3s ease-out 0.5s backwards;
 }
 
 
@@ -609,22 +609,28 @@ text-align: center;
 }
 
 
+@keyframes fadein-images {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: var( --section-opacity-first-normal );
+  }
+}
+
 
 .blog-home-content article:first-child .section-image {
-  opacity: 0.7;
+  opacity: var( --section-opacity-first-normal );
 }
 .blog-home-content article:first-child .section-image:hover {
-  opacity: 0.9;
+  opacity: var( --section-opacity-first-hover );
 }
 .blog-home-content .section-image {
-  opacity: 0.4;
+  opacity: var( --section-opacity-normal );
 }
-
 .blog-home-content .section-image:hover {
-  opacity: 0.8;
+  opacity: var( --section-opacity-hover  );
 }
-
-
 
 
 @keyframes image-pulse {
@@ -639,7 +645,7 @@ text-align: center;
          -o-transform: var( --pulseImage-transform-N );
             transform: var( --pulseImage-transform-N );
   }
-  100% {
+  90%, 100% {
        -webkit-filter: var( --pulseImage-Filter-C );
           -moz-filter: var( --pulseImage-Filter-C );
             -o-filter: var( --pulseImage-Filter-C );
@@ -678,51 +684,69 @@ text-align: center;
 }
 
 
+.blog-home-content article:first-child .section-image {
+
+  -webkit-animation: fadein-images 2s ease-out backwards, 
+	             image-pulse  20s ease-in-out infinite alternate;
+     -moz-animation: fadein-images22s ease-out backwards, 
+	             image-pulse  20s ease-in-out infinite alternate;
+          animation: fadein-images 2s ease-out backwards, 
+	             image-pulse  20s ease-in-out infinite alternate;
+
+}
+
 
 .site-header-image {
   -webkit-animation: fadein 1.2s ease-out backwards;
-  -moz-animation: fadein 1.2s ease-out backwards;
-  animation: fadein 1.2s ease-out backwards;
+     -moz-animation: fadein 1.2s ease-out backwards;
+          animation: fadein 1.2s ease-out backwards;
 }
 
 
 
-
 .site-header-image .section-image {
-  animation: fadein-images 1s ease-out backwards, 
-	     pulseHeader 15s ease-in-out infinite alternate;
+  -webkit-animation: fadein-images 1s ease-out backwards, 
+	             pulseHeader  15s ease-in-out infinite alternate;
+     -moz-animation: fadein-images 1s ease-out backwards, 
+	             pulseHeader  15s ease-in-out infinite alternate;
+          animation: fadein-images 1s ease-out backwards, 
+	             pulseHeader  15s ease-in-out infinite alternate;
 }
 
 .site-footer .footer-navigation .menu-footer-container .footer-logo {
 
 
     -webkit-animation: fadein 0.3s ease-out 0.5s backwards;
-    -moz-animation: fadein 0.3s ease-out 0.5s backwards;
-    animation: fadein 0.3s ease-out 0.5s backwards;
+       -moz-animation: fadein 0.3s ease-out 0.5s backwards;
+            animation: fadein 0.3s ease-out 0.5s backwards;
     position: relative;
 
     opacity: 1;
 
     -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    transition-property: opacity;
+       -moz-transition-property: opacity;
+            transition-property: opacity;
+
     -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+
     -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out; 
+       -moz-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out; 
 }
 .site-footer .footer-navigation .menu-footer-container .footer-logo a {
  -webkit-transition-property: color, text-decoration, opacity;
-  -moz-transition-property: color, text-decoration, opacity;
-  transition-property: color, text-decoration, opacity;
+    -moz-transition-property: color, text-decoration, opacity;
+         transition-property: color, text-decoration, opacity;
+
   -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+
   -webkit-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+     -moz-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .site-footer .footer-navigation .menu-footer-container ul {
@@ -964,9 +988,13 @@ li > ol {
   --section-header-blur-N: var( --section-blur-N );
   --section-header-blur-C: 0.25em;
 
-  --section-opacity-N: 0.5;
-  --section-opacity-L: 0.6;
-  --section-opacity-C: 0.8;
+  --section-opacity-first-normal: 0.7;
+  --section-opacity-first-hover:  0.9;
+
+  --section-opacity-normal: 0.4;
+  --section-opacity-hover:  0.8;
+
+
 
   --section-brightness-N: 140%;
   --section-brightness-L: 120%;
@@ -985,13 +1013,14 @@ li > ol {
   --section-grayscale-L: 0;
   --section-grayscale-C: 40%;
 
-  --section-zoom-N:	1.5;
+  --section-zoom-N:	2.0;
 
 
 
-  --section-zoom-C:	1.08;
 
-  --section-rotate-N:	 3deg;
+  --section-zoom-C:	1.1;
+
+  --section-rotate-N:	 6deg;
   --section-rotate-C:	-3deg;
 
   --pulseImage-Filter-N:    saturate( var(--section-saturate-N)   ) 
