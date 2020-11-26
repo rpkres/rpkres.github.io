@@ -645,7 +645,7 @@ text-align: center;
          -o-transform: var( --pulseImage-transform-N );
             transform: var( --pulseImage-transform-N );
   }
-  90%, 100% {
+  95%, 100% {
        -webkit-filter: var( --pulseImage-Filter-C );
           -moz-filter: var( --pulseImage-Filter-C );
             -o-filter: var( --pulseImage-Filter-C );
