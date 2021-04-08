@@ -1,87 +1,87 @@
 #sort key order: score|rhythm-strength|intensity
 #score|tempo|intensity|intensityR|loudness|pitch|rhythm|rhythm-strength|rhythm-tempo|rms|energy|path
 #
-3.33|191|594|-9.00|7.21|193|1.33|687|178|-18.13|-22.08|TaggedVamp/02. These Days.mp3
-3.38|105|557|-7.87|7.24|249|1.33|1076|107|-18.92|-25.94|TaggedVamp/04 They Can't Take That Away from Me.m4a
-3.48|167|736|-12.85|8.01|220|1.34|911|175|-18.43|-23.09|TaggedVamp/01. The Fairest of the Seasons.mp3
-3.57|172|837|-11.31|8.65|272|1.34|1196|164|-18.74|-23.97|TaggedVamp/Julie London - Light My Fire.mp3
-3.59|157|515|-11.32|6.81|200|1.29|1521|159|-26.16|-28.84|TaggedVamp/03 - Oh! You Pretty Things (Bowpromo mix).mp3
-3.62|86|768|-10.24|8.24|266|1.37|1428|172|-19.24|-24.63|TaggedVamp/04 Flowers Of Romance.m4a
-3.69|126|614|-13.96|7.40|335|1.34|2667|126|-24.83|-31.17|TaggedVamp/09 Ring My Bell.mp3
-3.70|178|965|-9.71|8.79|220|1.33|1132|172|-15.77|-20.74|TaggedVamp/Julie London - And I Love Him.mp3
-3.72|129|725|-8.66|7.99|174|1.35|1265|126|-19.20|-25.41|TaggedVamp/06 - Kooks (Bowpromo mix).mp3
-3.74|96|1067|-11.53|9.03|189|1.36|968|93|-17.15|-20.39|TaggedVamp/06. All Tomorrow's Parties.m4a
-3.82|99|676|-6.23|7.27|207|1.35|2022|25|-18.09|-25.98|TaggedVamp/06 Electric Relaxation.m4a
-3.88|89|728|-12.12|8.05|217|1.35|2287|175|-20.71|-27.74|TaggedVamp/03 Never Going Back Again.mp3
-3.93|148|1375|-12.68|9.45|232|1.35|1428|148|-15.33|-18.44|TaggedVamp/04. Venus in Furs.m4a
-3.94|133|1036|-13.77|8.50|272|1.39|2286|133|-19.10|-25.59|TaggedVamp/11 James Bond.mp3
-3.97|136|1642|-16.94|10.14|283|1.37|1608|133|-16.30|-19.54|TaggedVamp/The Tubes - White Punks On Dope.mp3
-3.98|140|1557|-18.78|10.05|273|1.37|1671|68|-15.82|-19.69|TaggedVamp/10. Virgina Plain.mp3
-3.99|126|1538|-12.23|9.80|265|1.35|1664|123|-13.69|-17.63|TaggedVamp/03 See Emily Play.mp3
-4.00|136|1424|-12.43|9.61|290|1.35|2016|67|-16.10|-18.81|TaggedVamp/Gary Oldman - I Wanna Be Your Dog.mp3
-4.00|129|1047|-8.63|7.95|269|1.37|2549|128|-16.24|-25.83|TaggedVamp/KH aka Fourtet - Only Human (Happening Now).mp3
-4.01|123|1811|-7.94|10.17|210|1.35|1178|246|-11.02|-14.33|TaggedVamp/Kingdom of Ends (real Music mix).mp3
-4.01|123|834|-8.92|7.88|201|1.32|2483|60|-19.58|-26.00|TaggedVamp/02 Dreams.mp3
-4.01|126|1048|-15.18|8.08|299|1.41|2905|252|-18.29|-30.81|TaggedVamp/Marie Davidson-Work It (Happening Now).mp3
-4.05|94|886|-9.51|8.14|194|1.37|2465|125|-19.85|-27.31|TaggedVamp/28. Nightclubbing (Baby Doc Remix).mp3
-4.07|101|1341|-8.46|9.37|223|1.34|1932|99|-13.46|-16.72|TaggedVamp/06 Dark Park.m4a
-4.09|133|1606|-9.14|9.83|204|1.36|1549|131|-12.50|-15.95|TaggedVamp/10 Oblivions.m4a
-4.10|136|1654|-10.72|10.17|183|1.34|1406|133|-12.88|-15.80|TaggedVamp/01 Arnold Layne.mp3
-4.11|81|1386|-15.91|9.65|264|1.35|2471|81|-16.10|-19.59|TaggedVamp/01 Deceptacon (original).m4a
-4.11|126|1208|-11.55|9.22|255|1.38|2699|125|-16.35|-21.92|TaggedVamp/01 - Do It Again.mp3
-4.12|117|1216|-10.39|8.75|282|1.34|3027|230|-15.42|-20.33|TaggedVamp/16 Water Me Down.m4a
-4.13|89|1478|-8.93|9.53|248|1.37|2288|44|-11.28|-16.57|TaggedVamp/22 IBTIHAJ.m4a
-4.13|98|1377|-9.48|9.27|274|1.36|2694|49|-14.63|-19.43|TaggedVamp/18 Home.m4a
-4.15|148|1801|-14.19|10.36|309|1.36|2400|72|-13.99|-18.83|TaggedVamp/03. I Hear A Symphony.mp3
-4.16|129|1220|-10.37|9.32|167|1.40|1976|252|-16.18|-22.08|TaggedVamp/17. Bang A Gong (Get It On).m4a
-4.18|98|1515|-13.62|9.79|260|1.34|2569|191|-14.81|-20.06|TaggedVamp/01. These Eyes.mp3
-4.21|157|1341|-8.63|9.45|176|1.35|2140|152|-14.99|-17.91|TaggedVamp/12 None of My Friends.m4a
-4.22|103|1779|-14.58|10.42|194|1.38|1825|100|-15.69|-19.61|TaggedVamp/03. Lust for Life.mp3
-4.24|126|1777|-11.48|10.12|206|1.37|2027|63|-14.20|-16.87|TaggedVamp/13 Shiny New Model.m4a
-4.24|161|1331|-11.62|9.40|206|1.34|2683|80|-15.15|-21.94|TaggedVamp/10. Ain't No Sunshine.mp3
-4.26|126|1416|-10.09|9.42|188|1.36|2410|125|-14.36|-18.99|TaggedVamp/01 Gentlemen Take Polaroids.mp3
-4.29|129|1967|-12.68|10.43|265|1.37|2648|128|-14.01|-18.45|TaggedVamp/16-master and servant.mp3
-4.29|99|1632|-12.34|9.98|227|1.36|2685|98|-13.97|-18.64|TaggedVamp/The Rolling Stones - It's All Over Now.mp3
-4.29|110|1683|-14.63|10.21|281|1.38|3218|211|-15.63|-22.27|TaggedVamp/02 Sir Duke.m4a
-4.29|117|1317|-11.39|9.16|229|1.36|3413|58|-17.08|-22.81|TaggedVamp/01. Bette Davis Eyes.mp3
-4.30|123|1930|-12.36|10.53|207|1.37|2124|60|-13.48|-16.69|TaggedVamp/02 I Wanna Be Your Dog.m4a
-4.30|117|1931|-9.99|10.43|232|1.36|2406|58|-12.26|-15.24|TaggedVamp/05 Eat, Sleep, Wake (Nothing But You).m4a
-4.31|120|1392|-12.26|9.48|238|1.33|3504|60|-15.69|-20.97|TaggedVamp/07 Heatwave - Boogie Nights.mp3
-4.32|167|1548|-8.92|9.56|200|1.35|2698|82|-13.16|-16.85|TaggedVamp/15 People's Faces (Streatham Version).m4a
-4.33|140|2172|-15.63|10.77|283|1.37|2781|140|-12.16|-17.87|TaggedVamp/Richard Hell & The Voidoids - Blank Generation.mp3
-4.33|123|1709|-8.58|9.45|240|1.36|3015|60|-12.47|-17.45|TaggedVamp/03 Silver Screen (Shower Scene).m4a
-4.33|110|1599|-12.81|9.76|248|1.35|3297|54|-16.00|-22.78|TaggedVamp/15 Jet Black.m4a
-4.34|94|1859|-12.01|10.21|255|1.36|3025|92|-12.35|-16.40|TaggedVamp/Marvin Gaye - Mercy Mercy Me (The Ecology).mp3
-4.34|140|2008|-17.59|10.34|312|1.36|3399|68|-13.72|-19.77|TaggedVamp/11. Baby Love.mp3
-4.34|133|1826|-11.56|9.63|365|1.40|4416|258|-13.69|-19.91|TaggedVamp/The Slits - The Grapevine.mp3
-4.35|129|1981|-12.70|10.47|284|1.38|3220|252|-13.41|-16.89|TaggedVamp/04 Isley Brothers - That Lady.mp3
-4.35|129|1762|-14.33|9.77|322|1.35|4106|63|-15.06|-21.47|TaggedVamp/6. When Doves Cry.mp3
-4.36|144|1880|-10.39|10.19|235|1.39|2871|70|-11.91|-15.82|TaggedVamp/21 Trouble Every Day.m4a
-4.36|172|1218|-9.69|8.62|214|1.36|4041|167|-15.66|-24.33|TaggedVamp/15 Mother's Mother's Magazines.m4a
-4.37|115|1730|-12.06|10.19|203|1.38|2723|114|-14.27|-19.36|TaggedVamp/04-enjoy the silence.mp3
-4.37|126|1722|-7.23|9.41|212|1.38|2879|62|-9.95|-16.67|TaggedVamp/Jealousy (House Mix).mp3
-4.37|129|1361|-9.79|8.71|294|1.37|5024|126|-15.39|-25.77|TaggedVamp/Le Tigre — Deceptacon (DFA Remix).mp3
-4.38|117|2644|-14.19|11.84|257|1.34|2313|116|-10.71|-14.34|TaggedVamp/12-enjoy the silence (reinterpreted by mike shinoda).mp3
-4.38|129|2494|-15.58|11.11|316|1.38|3048|128|-13.12|-16.43|TaggedVamp/19 Star Guitar.m4a
-4.39|98|1924|-8.45|10.10|185|1.35|2383|191|-10.19|-13.70|TaggedVamp/Paul McCartney - 01  Too Many People.mp3
-4.40|96|1119|-5.49|8.23|141|1.33|3172|47|-13.51|-18.76|TaggedVamp/05-useless (the kruder + dorfmeister session).mp3
-4.40|80|1344|-11.57|9.03|187|1.34|3485|159|-17.94|-21.31|TaggedVamp/02 Beat on the Brat.mp3
-4.41|108|2036|-13.68|10.45|228|1.39|2842|107|-14.23|-19.53|TaggedVamp/25 Sound And Vision.m4a
-4.41|126|1714|-11.59|9.71|233|1.33|3471|62|-13.42|-19.79|TaggedVamp/Johnny Nash - I Can See Clearly Now.mp3
-4.42|91|1456|-9.56|9.50|183|1.33|3281|89|-14.33|-19.45|TaggedVamp/02 Freedom.m4a
-4.43|110|1789|-12.11|9.89|252|1.34|3788|109|-12.77|-19.80|TaggedVamp/Sly & The Family Stone - Family Affair.mp3
-4.44|101|1589|-8.06|9.59|189|1.37|3279|50|-12.32|-18.59|TaggedVamp/13 Summer Girl.m4a
-4.44|101|1917|-12.55|9.88|278|1.34|3963|50|-11.53|-17.77|TaggedVamp/Steve Miller Band - 2  Fly Like an Eagle.mp3
-4.45|133|2439|-12.79|11.12|248|1.37|2887|265|-11.83|-16.53|TaggedVamp/01. Read My Mind (Pet Shop Boys 'Stars Are Blazing' Mix).mp3
-4.45|133|1822|-11.15|10.17|216|1.36|3304|129|-11.83|-15.97|TaggedVamp/1-10 Beth Orton-  Carmella (Four Tet Remix).mp3
-4.48|129|2068|-15.70|10.67|246|1.38|3559|126|-14.15|-17.70|TaggedVamp/26 It's My Life.m4a
-4.48|140|1918|-12.23|10.46|239|1.37|3804|136|-14.39|-19.86|TaggedVamp/26 The Cleaner.m4a
-4.48|98|2566|-12.63|11.41|349|1.33|4088|97|-10.41|-15.34|TaggedVamp/02. Lust for Life (The Prodigy Remix).m4a
-4.53|133|1690|-11.83|9.85|183|1.35|3680|129|-14.05|-19.56|TaggedVamp/01-personal jesus.mp3
-4.53|161|1887|-8.70|9.56|234|1.37|4189|157|-11.13|-15.40|TaggedVamp/01 Throw It Back.m4a
-4.54|108|1984|-11.19|10.73|187|1.36|3287|207|-12.58|-17.82|TaggedVamp/04 Midnight Dipper.m4a
-4.54|120|2077|-12.49|10.42|233|1.36|3931|119|-12.26|-16.83|TaggedVamp/Chris Farlowe & The Thunderbirds - It's All Over Now, Baby Blue.mp3
-4.56|99|2080|-13.45|10.54|262|1.37|4561|98|-12.91|-19.73|TaggedVamp/14. Will It Go Round In Circles.mp3
-4.59|123|2271|-14.56|10.52|295|1.37|5022|120|-13.43|-18.99|TaggedVamp/34. Theme From Shaft.mp3
-4.71|108|2039|-10.18|10.01|219|1.33|5468|107|-10.44|-17.18|TaggedVamp/Donovan - 01  Mellow Yellow.mp3
-4.74|81|2334|-9.55|10.18|266|1.36|6318|80|-8.81|-14.86|TaggedVamp/07 Big Booty.m4a
+116.1|96|1119|-5.49|8.23|141|1.33|3172|47|-13.51|-18.76|TaggedVamp/05-useless (the kruder + dorfmeister session).mp3
+122.1|80|1344|-11.57|9.03|187|1.34|3485|159|-17.94|-21.31|TaggedVamp/02 Beat on the Brat.mp3
+129.0|91|1456|-9.56|9.50|183|1.33|3281|89|-14.33|-19.45|TaggedVamp/02 Freedom.m4a
+134.3|96|1067|-11.53|9.03|189|1.36|968|93|-17.15|-20.39|TaggedVamp/06. All Tomorrow's Parties.m4a
+134.3|98|1924|-8.45|10.10|185|1.35|2383|191|-10.19|-13.70|TaggedVamp/Paul McCartney - 01  Too Many People.mp3
+135.1|94|886|-9.51|8.14|194|1.37|2465|125|-19.85|-27.31|TaggedVamp/28. Nightclubbing (Baby Doc Remix).mp3
+138.4|101|1589|-8.06|9.59|189|1.37|3279|50|-12.32|-18.59|TaggedVamp/13 Summer Girl.m4a
+139.2|89|728|-12.12|8.05|217|1.35|2287|175|-20.71|-27.74|TaggedVamp/03 Never Going Back Again.mp3
+141.7|103|1779|-14.58|10.42|194|1.38|1825|100|-15.69|-19.61|TaggedVamp/03. Lust for Life.mp3
+141.9|108|1984|-11.19|10.73|187|1.36|3287|207|-12.58|-17.82|TaggedVamp/04 Midnight Dipper.m4a
+143.4|99|676|-6.23|7.27|207|1.35|2022|25|-18.09|-25.98|TaggedVamp/06 Electric Relaxation.m4a
+146.1|81|1386|-15.91|9.65|264|1.35|2471|81|-16.10|-19.59|TaggedVamp/01 Deceptacon (original).m4a
+146.6|81|2334|-9.55|10.18|266|1.36|6318|80|-8.81|-14.86|TaggedVamp/07 Big Booty.m4a
+146.8|129|1220|-10.37|9.32|167|1.40|1976|252|-16.18|-22.08|TaggedVamp/17. Bang A Gong (Get It On).m4a
+148.8|89|1478|-8.93|9.53|248|1.37|2288|44|-11.28|-16.57|TaggedVamp/22 IBTIHAJ.m4a
+149.7|129|725|-8.66|7.99|174|1.35|1265|126|-19.20|-25.41|TaggedVamp/06 - Kooks (Bowpromo mix).mp3
+150.1|99|1632|-12.34|9.98|227|1.36|2685|98|-13.97|-18.64|TaggedVamp/The Rolling Stones - It's All Over Now.mp3
+150.3|101|1341|-8.46|9.37|223|1.34|1932|99|-13.46|-16.72|TaggedVamp/06 Dark Park.m4a
+151.3|86|768|-10.24|8.24|266|1.37|1428|172|-19.24|-24.63|TaggedVamp/04 Flowers Of Romance.m4a
+152.5|115|1730|-12.06|10.19|203|1.38|2723|114|-14.27|-19.36|TaggedVamp/04-enjoy the silence.mp3
+153.5|108|2039|-10.18|10.01|219|1.33|5468|107|-10.44|-17.18|TaggedVamp/Donovan - 01  Mellow Yellow.mp3
+153.7|126|1416|-10.09|9.42|188|1.36|2410|125|-14.36|-18.99|TaggedVamp/01 Gentlemen Take Polaroids.mp3
+154.6|94|1859|-12.01|10.21|255|1.36|3025|92|-12.35|-16.40|TaggedVamp/Marvin Gaye - Mercy Mercy Me (The Ecology).mp3
+155.7|133|1690|-11.83|9.85|183|1.35|3680|129|-14.05|-19.56|TaggedVamp/01-personal jesus.mp3
+156.6|108|2036|-13.68|10.45|228|1.39|2842|107|-14.23|-19.53|TaggedVamp/25 Sound And Vision.m4a
+157.4|123|834|-8.92|7.88|201|1.32|2483|60|-19.58|-26.00|TaggedVamp/02 Dreams.mp3
+157.6|136|1654|-10.72|10.17|183|1.34|1406|133|-12.88|-15.80|TaggedVamp/01 Arnold Layne.mp3
+159.2|98|1515|-13.62|9.79|260|1.34|2569|191|-14.81|-20.06|TaggedVamp/01. These Eyes.mp3
+159.4|123|1930|-12.36|10.53|207|1.37|2124|60|-13.48|-16.69|TaggedVamp/02 I Wanna Be Your Dog.m4a
+160.6|123|1811|-7.94|10.17|210|1.35|1178|246|-11.02|-14.33|TaggedVamp/Kingdom of Ends (real Music mix).mp3
+161.2|99|2080|-13.45|10.54|262|1.37|4561|98|-12.91|-19.73|TaggedVamp/14. Will It Go Round In Circles.mp3
+161.3|126|1777|-11.48|10.12|206|1.37|2027|63|-14.20|-16.87|TaggedVamp/13 Shiny New Model.m4a
+162.1|105|557|-7.87|7.24|249|1.33|1076|107|-18.92|-25.94|TaggedVamp/04 They Can't Take That Away from Me.m4a
+163.3|98|1377|-9.48|9.27|274|1.36|2694|49|-14.63|-19.43|TaggedVamp/18 Home.m4a
+163.5|126|1722|-7.23|9.41|212|1.38|2879|62|-9.95|-16.67|TaggedVamp/Jealousy (House Mix).mp3
+163.9|117|1317|-11.39|9.16|229|1.36|3413|58|-17.08|-22.81|TaggedVamp/01. Bette Davis Eyes.mp3
+164.3|133|1606|-9.14|9.83|204|1.36|1549|131|-12.50|-15.95|TaggedVamp/10 Oblivions.m4a
+165.0|117|1931|-9.99|10.43|232|1.36|2406|58|-12.26|-15.24|TaggedVamp/05 Eat, Sleep, Wake (Nothing But You).m4a
+165.1|110|1599|-12.81|9.76|248|1.35|3297|54|-16.00|-22.78|TaggedVamp/15 Jet Black.m4a
+166.2|157|1341|-8.63|9.45|176|1.35|2140|152|-14.99|-17.91|TaggedVamp/12 None of My Friends.m4a
+166.6|110|1789|-12.11|9.89|252|1.34|3788|109|-12.77|-19.80|TaggedVamp/Sly & The Family Stone - Family Affair.mp3
+167.5|120|2077|-12.49|10.42|233|1.36|3931|119|-12.26|-16.83|TaggedVamp/Chris Farlowe & The Thunderbirds - It's All Over Now, Baby Blue.mp3
+167.9|101|1917|-12.55|9.88|278|1.34|3963|50|-11.53|-17.77|TaggedVamp/Steve Miller Band - 2  Fly Like an Eagle.mp3
+169.1|133|1822|-11.15|10.17|216|1.36|3304|129|-11.83|-15.97|TaggedVamp/1-10 Beth Orton-  Carmella (Four Tet Remix).mp3
+169.2|120|1392|-12.26|9.48|238|1.33|3504|60|-15.69|-20.97|TaggedVamp/07 Heatwave - Boogie Nights.mp3
+171.4|126|1714|-11.59|9.71|233|1.33|3471|62|-13.42|-19.79|TaggedVamp/Johnny Nash - I Can See Clearly Now.mp3
+171.7|123|1709|-8.58|9.45|240|1.36|3015|60|-12.47|-17.45|TaggedVamp/03 Silver Screen (Shower Scene).m4a
+173.7|117|2644|-14.19|11.84|257|1.34|2313|116|-10.71|-14.34|TaggedVamp/12-enjoy the silence (reinterpreted by mike shinoda).mp3
+175.7|110|1683|-14.63|10.21|281|1.38|3218|211|-15.63|-22.27|TaggedVamp/02 Sir Duke.m4a
+177.2|157|515|-11.32|6.81|200|1.29|1521|159|-26.16|-28.84|TaggedVamp/03 - Oh! You Pretty Things (Bowpromo mix).mp3
+178.1|129|2068|-15.70|10.67|246|1.38|3559|126|-14.15|-17.70|TaggedVamp/26 It's My Life.m4a
+179.4|126|1208|-11.55|9.22|255|1.38|2699|125|-16.35|-21.92|TaggedVamp/01 - Do It Again.mp3
+181.4|133|2439|-12.79|11.12|248|1.37|2887|265|-11.83|-16.53|TaggedVamp/01. Read My Mind (Pet Shop Boys 'Stars Are Blazing' Mix).mp3
+181.9|117|1216|-10.39|8.75|282|1.34|3027|230|-15.42|-20.33|TaggedVamp/16 Water Me Down.m4a
+182.3|161|1331|-11.62|9.40|206|1.34|2683|80|-15.15|-21.94|TaggedVamp/10. Ain't No Sunshine.mp3
+182.7|126|1538|-12.23|9.80|265|1.35|1664|123|-13.69|-17.63|TaggedVamp/03 See Emily Play.mp3
+182.7|167|1548|-8.92|9.56|200|1.35|2698|82|-13.16|-16.85|TaggedVamp/15 People's Faces (Streatham Version).m4a
+182.7|140|1918|-12.23|10.46|239|1.37|3804|136|-14.39|-19.86|TaggedVamp/26 The Cleaner.m4a
+183.7|144|1880|-10.39|10.19|235|1.39|2871|70|-11.91|-15.82|TaggedVamp/21 Trouble Every Day.m4a
+184.4|98|2566|-12.63|11.41|349|1.33|4088|97|-10.41|-15.34|TaggedVamp/02. Lust for Life (The Prodigy Remix).m4a
+185.1|129|1967|-12.68|10.43|265|1.37|2648|128|-14.01|-18.45|TaggedVamp/16-master and servant.mp3
+185.3|148|1375|-12.68|9.45|232|1.35|1428|148|-15.33|-18.44|TaggedVamp/04. Venus in Furs.m4a
+186.3|129|1047|-8.63|7.95|269|1.37|2549|128|-16.24|-25.83|TaggedVamp/KH aka Fourtet - Only Human (Happening Now).mp3
+189.8|133|1036|-13.77|8.50|272|1.39|2286|133|-19.10|-25.59|TaggedVamp/11 James Bond.mp3
+190.4|123|2271|-14.56|10.52|295|1.37|5022|120|-13.43|-18.99|TaggedVamp/34. Theme From Shaft.mp3
+191.4|129|1981|-12.70|10.47|284|1.38|3220|252|-13.41|-16.89|TaggedVamp/04 Isley Brothers - That Lady.mp3
+191.7|167|736|-12.85|8.01|220|1.34|911|175|-18.43|-23.09|TaggedVamp/01. The Fairest of the Seasons.mp3
+192.1|191|594|-9.00|7.21|193|1.33|687|178|-18.13|-22.08|TaggedVamp/02. These Days.mp3
+192.1|172|1218|-9.69|8.62|214|1.36|4041|167|-15.66|-24.33|TaggedVamp/15 Mother's Mother's Magazines.m4a
+194.2|126|1048|-15.18|8.08|299|1.41|2905|252|-18.29|-30.81|TaggedVamp/Marie Davidson-Work It (Happening Now).mp3
+194.3|161|1887|-8.70|9.56|234|1.37|4189|157|-11.13|-15.40|TaggedVamp/01 Throw It Back.m4a
+194.7|129|1361|-9.79|8.71|294|1.37|5024|126|-15.39|-25.77|TaggedVamp/Le Tigre — Deceptacon (DFA Remix).mp3
+195.1|140|1557|-18.78|10.05|273|1.37|1671|68|-15.82|-19.69|TaggedVamp/10. Virgina Plain.mp3
+196.3|136|1642|-16.94|10.14|283|1.37|1608|133|-16.30|-19.54|TaggedVamp/The Tubes - White Punks On Dope.mp3
+198.0|178|965|-9.71|8.79|220|1.33|1132|172|-15.77|-20.74|TaggedVamp/Julie London - And I Love Him.mp3
+198.6|136|1424|-12.43|9.61|290|1.35|2016|67|-16.10|-18.81|TaggedVamp/Gary Oldman - I Wanna Be Your Dog.mp3
+198.8|140|2172|-15.63|10.77|283|1.37|2781|140|-12.16|-17.87|TaggedVamp/Richard Hell & The Voidoids - Blank Generation.mp3
+202.1|129|2494|-15.58|11.11|316|1.38|3048|128|-13.12|-16.43|TaggedVamp/19 Star Guitar.m4a
+203.8|129|1762|-14.33|9.77|322|1.35|4106|63|-15.06|-21.47|TaggedVamp/6. When Doves Cry.mp3
+205.6|126|614|-13.96|7.40|335|1.34|2667|126|-24.83|-31.17|TaggedVamp/09 Ring My Bell.mp3
+208.9|140|2008|-17.59|10.34|312|1.36|3399|68|-13.72|-19.77|TaggedVamp/11. Baby Love.mp3
+213.5|148|1801|-14.19|10.36|309|1.36|2400|72|-13.99|-18.83|TaggedVamp/03. I Hear A Symphony.mp3
+216.3|172|837|-11.31|8.65|272|1.34|1196|164|-18.74|-23.97|TaggedVamp/Julie London - Light My Fire.mp3
+219.9|133|1826|-11.56|9.63|365|1.40|4416|258|-13.69|-19.91|TaggedVamp/The Slits - The Grapevine.mp3
