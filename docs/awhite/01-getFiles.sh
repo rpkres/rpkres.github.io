@@ -28,13 +28,13 @@ Globals=(
   year=			# this gets set to current year
   day=			# this gets set to current day of year if not hardcoded
 #day=261		# hardcode to a specific day of the year
-
+day=265
   numberOfDays=1	# no. days to go back
 
   hourStart=0		# min 0
   hourEnd=23		# max 23
-hourStart=10
-hourEnd=10
+hourStart=20
+hourEnd=23
 
   interval=10		# NOAA current snapshot time in minutes
 
