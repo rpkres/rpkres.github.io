@@ -4,33 +4,25 @@ Usage()
 {
 local suffix=$( GetGlobalVal suffix )
 local metaKey=$( GetGlobalVal metaKey )
-local prog=$( basename "${0}" )
 
 cat <<EOD
 
-Usage: ${prog} [option] directory
+Usage: ${Prog} [option] directory
 
-	 -h	
-	--help		Prints this message and exits.
+	-h, --help		Prints this message and exits.
 
-	 -k=string
-	--key=string	Set the metadata keyword to 'string' (default 
-			'${metaKey}'). The associated value of the key
-			is used to store the filename.
+        -k, --key <string>	Set the metadata keyword to <string> (default 
+                        	'${metaKey}'). The associated value of the 
+				key is set to the filename.
 
-	 -s=string
-	--suffix=string	Set the filename suffix to 'string' (default 
-			'${suffix}'). Any files with this suffix in the
-			given directo
+        -s, --suffix <string>	Set the suffix to <string> (default '${suffix}').
 
-			Note that the suffix is preceded by a period 
-			character automatically.
+	${Prog} runs find(1) on the specified directory for files 
+	ending with the suffix (default '${suffix}') and adds it to a list.
 
-	${prog} first runs find(1) on the specified directory for all 
-	filenames ending with a specific suffix (default '${suffix}').
-
-	Then sips(1) looks to see if a metadata keyword (default '${metaKey}')
-	has been set, if not it sets it to the filename. 
+	Then sips(1) is run on each file in the list and sets the value 
+	associated with the metadata keyword (default '${metaKey}') to the 
+	filename if the key hasn't already been set.
 
 	This allows tools such as ffmpeg(1) to use the metadata to display
 	the filename in an overlay on the output video. Quite hacky, but
@@ -83,6 +75,9 @@ local func="${FUNCNAME}"
     exit 1
   fi
 
+  local tSize=$(stty size)                # returns rows space columns
+  local charMax=( ${tSize##* } - 10 )     # rhs of space char minus value
+
   #	Save the output of find(1) to a list
   #
   list=$( ${find} "${theDir}" -iname "*.${theSuffix}" -print)
@@ -95,7 +90,7 @@ local func="${FUNCNAME}"
 
     # print a <CR> if $i % some value is zero
     #	terminates periods printed to screen
-    ((cr=$i % ${CharMax})); if [ $cr -eq 0 ]; then echo -en "\n"; fi
+    ((cr=$i % ${charMax})); if [ $cr -eq 0 ]; then echo -en "\n"; fi
 
     echo -en "."
 

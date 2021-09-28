@@ -6,10 +6,11 @@
 set -u                         # -e stop on errors, -u stop on unset vars
                                 # n.b., exit() in sourced functions don't work
 
-Dash=""				# for printing seperator dash 
-tSize=$(stty size)		# returns rows space columns
-let CharMax=( ${tSize##* } - 10 ) # used for printing dashes, dots etc.
-unset tSize
+
+Prog=$(basename $0)		# The calling script's name.
+
+Dash=""				# For printing seperator dash, gets set
+				# if empty see MakeDash().
 
 nil="<nil>"			# used extensively to check returned keys etc.
 
@@ -122,14 +123,22 @@ local key
 #
 #	Note - LIFO - last entry gets modified in case of duplicates
 #
+#	Also note, if no val arg is specified, it will be set to ${nil}
+#
 SetGlobalVal()
 {
-local theKey="${1}"
-local theVal="${2}"
+local theKey
+local theVal
 local i
 local key
 local nEntries
 local replacement
+
+  case $# in
+    1 ) theKey="${1}"; theVal="${nil}" ;;
+    2 ) theKey="${1}"; theVal="${2}" ;;
+    * ) echo -e "${func} Bailing. Missing args, count is '$$'"; exit 1;;
+  esac
 
   replacement="${theKey}=${theVal}"
 
@@ -176,8 +185,11 @@ local func="${FUNCNAME}"
 MakeDash()
 {
 local i
+local tSize=$(stty size)		# returns rows space columns
+local charMax=( ${tSize##* } - 10 ) 	# rhs of space char minus value
 
-  for ((i=0; i<$CharMax; i++)); do Dash+="-"; done
-}
+  for ((i=0; i<$charMax; i++)); do Dash+="-"; done
+
+}		# eo MakeDash()
 
 if [ "${Dash}" == "" ]; then MakeDash; fi
