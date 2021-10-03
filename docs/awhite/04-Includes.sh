@@ -39,14 +39,19 @@ AddiTunesMetadata()
 local iFile="${1}"
 local appName="AtomicParsley"
 local appPath
-local theData
-local array
-local argc
+local dirData
+local dirArray
+local dirArgc
+local vidData
+local vidArray
+local vidArgc
 local tvEpisode
 local tvSeason
 local tvAirDate
 local tvShow
 local tvTitle
+local longDesc
+local storeDesc
 local func="${FUNCNAME}()"
 
   echo "${Dash}"
@@ -67,27 +72,54 @@ local func="${FUNCNAME}()"
     exit 1
   fi
 
-
-  #	Put the data into a Global called $XattrName on success
+  #	Make copy of current directory extended attibutes as AtomicParsley
+  #	seems to blow it away. This routine makes a global with the
+  #	attribute name and stores a value associated with it.
   #
-  GetXattr "${iFile}"
+  ReadXattrData "${XattrNameForDir}" "${iFile}"
+  dirData=$( GetGlobalVal "${XattrNameForDir}" )
 
-  #	Get the attribute data string
+  #	Split the data into seperate array items using $Xseperator
+  #	and use the source directory name in the store description string.
   #
-  theData=$( GetGlobalVal "${XattrName}" )
+  IFS="${Xseperator}" dirArray=(${dirData[*]})
+  dirArgc=${#dirArray[@]}
+
+  #	Could do a better job of determining path and adding it here
+  #
+
+   storeDesc="Movie made from individual NOAA satellite images "
+  storeDesc+="downloaded to directory: ${dirArray[2]}"
+
+  #	iTunes often truncates the description metadata tag, so store it for
+  #	use in the longDesc
+  #
+  longDesc=$( ffprobe -v 0 -hide_banner -show_entries format_tags=description -of default=noprint_wrappers=1:nokey=1 "${iFile}" )
+
+  if [ "${longDesc}" == "" ]; then longDesc="N/A"; fi
+
+
+  #	Make copy of current video extended attibutes as AtomicParsley
+  #	seems to blow it away. This routine makes a global with the
+  #	attribute name and stores a value associated with it.
+  #
+  ReadXattrData "${XattrNameForVideo}" "${iFile}"
+  vidData=$( GetGlobalVal "${XattrNameForVideo}" )
 
   #	Split the data into seperate array items using $Xseperator
   #
-  IFS="${Xseperator}" array=(${theData[*]})
-  argc=${#array[@]}
+  IFS="${Xseperator}" vidArray=(${vidData[*]})
+  vidArgc=${#vidArray[@]}
 
   #	Set variables based on the appropriate array index
   #
-  tvEpisode="${array[0]}"	# uses day of year movie file created
-  tvSeason="${array[1]}"	# uses the year of movie file created
-  tvAirDate="${array[2]}"	# uses the date in UTC format for broadcast date
-  tvShow="${array[3]}"		# uses defined name for TV show
-  tvTitle="${array[4]}"		# uses show name+height for the episode name
+  tvEpisode="${vidArray[0]}"	# uses day of year movie file created
+  tvSeason="${vidArray[1]}"	# uses the year of movie file created
+  tvAirDate="${vidArray[2]}"	# uses the date in UTC format for broadcast date
+  tvShow="${vidArray[3]}"	# uses defined name for TV show
+  tvTitle="${vidArray[4]}"	# uses show name+height for the episode name
+
+  tvEpisodeID="${tvSeason}|${tvEpisode}"
 
   #	Update the Global values with the data in case we want to print it
   #
@@ -104,10 +136,21 @@ local func="${FUNCNAME}()"
 	--TVShowName 	"${tvShow}"	\
 	--TVSeasonNum	"${tvSeason}"	\
 	--TVEpisodeNum	"${tvEpisode}"	\
+	--TVEpisode	"${tvEpisodeID}" \
 	--TVNetwork	"NOAA"		\
 	--year 		"${tvAirDate}"	\
 	--title		"${tvTitle}"	\
-	--storedes 	"Movie made from NOAA Satellite images."
+	--longdesc	"${longDesc}"	\
+	--storedes 	"${storeDesc}"	
+
+  #	Atomic parsley seems to strip the extended attriutes, so we
+  #	need to add them back again.
+  #
+  SetGlobalVal "${XattrNameForDir}"   "${dirData}"
+  SetGlobalVal "${XattrNameForVideo}" "${vidData}"
+
+  WriteXattrData "${XattrNameForDir}"   "${iFile}"
+  WriteXattrData "${XattrNameForVideo}" "${iFile}"
 	
 }		# eo AddiTunesMetadata()
 

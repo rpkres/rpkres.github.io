@@ -60,6 +60,8 @@ local func="${FUNCNAME}"
   echo "${Dash}"
   echo -e "${func}()\n"
 
+  PrintGlobals
+
   if [ ! -x "${sips}" ]; then
     echo -e "Returning. Not a Mac? No such program: '${sips}'\n"
     return 1

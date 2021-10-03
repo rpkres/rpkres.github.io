@@ -61,7 +61,7 @@ Globals=(
 
   SetGlobalVal directory "${iDir}"
 
-  PrintGlobals
+#  PrintGlobals
 
   AddMetadataWithSips "${iDir}"
 

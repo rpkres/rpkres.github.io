@@ -66,13 +66,16 @@ PrintGlobals
 
   #	If the variable 'execCurl' is not set, just return
   #
-  if [ "${execCurl}" != "1" ]; then
-    echo -e "Not executing curl(1) - set Global 'execCurl=1'.\n"
+  if [ "${execCurl}" != "true" ]; then
+    echo -e "Not executing curl(1) - set Global 'execCurl true'.\n"
     return
   fi
 
+  #	had to add --insecure as the noaa ssl cert expired once
+  #
   curl "${theUrl}"			\
 	--fail				\
+	--insecure			\
 	--user-agent "${userAgent}"	\
 	--limit-rate 1200k		\
 	--create-dirs			\
@@ -122,4 +125,4 @@ local hoursRange
 
 }		# eo PrebuildHoursArray()
 
-
+#	EOF

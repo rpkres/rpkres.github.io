@@ -131,10 +131,11 @@ Globals=(
 
   done
 
-  #     last args should be the inputHeight, outputHeigh and directory
+  #     last args should be the inputHeight and directory
   #
   iHeight="${argv[($argc-2)]}"
   iDir="${argv[($argc-1)]}"
+
 
   oHeight=$( GetGlobalVal outHeight )
 
@@ -172,13 +173,14 @@ Globals=(
 
   SetGlobalVal outFile "${oFile}"
 
+
   #	First generate an image file based mkv with all the files
   #	in the input directory.
   #
   #	The routine also crops out the noaa footer and scales it the
   #	outHeight set above
   #
-#  MakeMkv "${mFile}"
+  MakeMkv "${mFile}"
 
   #	The following routine will just copy the video stream from the
   #	source video and package it into a mp4 container - however the
@@ -188,12 +190,13 @@ Globals=(
 
   #	Convert the mkv version to mp4 using the Mac hardware accelerator
   #
-#  MakeMp4HWA "${mFile}" "${oFile}"
+  MakeMp4HWA "${mFile}" "${oFile}"
 
   #	Add extended attributes to the output movie so that some info can
   #	be easily accessed at a later time.
   #
-  AddXattr "${oFile}"
+  SetMovieXattr "${oFile}"
+PrintGlobals
 
   #	Clean up - nuke mkv and stream copy versions if flagged
   #

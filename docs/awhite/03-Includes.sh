@@ -55,7 +55,7 @@ local func="${FUNCNAME}()"
 
   iDir=$( GetGlobalVal directory )
   if [ "${iDir}" == "${nil}" ]; then
-    echo "${func} Bailing. Global 'idir' is not set."
+    echo "${func} Bailing. Global 'iDir' is not set."
     exit 1
   fi
 
@@ -63,6 +63,13 @@ local func="${FUNCNAME}()"
     echo "${func} Bailing. No such directory: '${iDir}'"
     exit 1
   fi
+
+  #	For some reason ffmpeg chokes on square brackets for the mkv
+  #	codec, so escape them.
+  #
+  iDir="${iDir//[/\[}"
+  iDir="${iDir//]/\]}"
+
 
   suffix=$( GetGlobalVal suffix )
   if [ "${suffix}" == "${nil}" ]; then

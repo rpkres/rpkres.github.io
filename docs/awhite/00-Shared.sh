@@ -172,8 +172,8 @@ PrintGlobals()
 local i
 local func="${FUNCNAME}"
 
-  echo "${Dash}"
-  echo -e "${func}()\n"
+#  echo "${Dash}"
+#  echo -e "${func}()\n"
 
   for i in "${Globals[@]}"; do
     echo -e "\t${i}"

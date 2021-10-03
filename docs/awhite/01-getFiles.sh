@@ -3,7 +3,9 @@
 #	Files to include
 #
 . 00-Shared.sh			# Some funcs/vars shared by all noaa scripts
+. 00-Xattr.sh			# For handling extended attributes xattr(1)
 . 01-Includes.sh		# Extra funcs used by this script.
+. 01-Usage.sh			# Name says it all
 
 declare -a curlHoursArr		# A global array that we'll pre-populate 
 				# formatted for curl's globbing that matchs 
@@ -27,7 +29,6 @@ Globals=(
 
   year=			# this gets set to current year
   day=			# this gets set to current day of year if not hardcoded
-#day=261		# hardcode to a specific day of the year
   numberOfDays=1	# no. days to go back
 
   hourStart=0		# min 0
@@ -36,13 +37,13 @@ Globals=(
   interval=10		# NOAA current snapshot time in minutes
 
 #  resolution="450x270"
-#  resolution="900x540"
-  resolution="1800x1080"
+  resolution="900x540"
+#  resolution="1800x1080"
 #  resolution="3600x2160"
 #  resolution="7200x4320"
 
-  execCurl=1		# whether to run curl(1)
-  addTags=1		# whether to run metadata script on downloaded files
+  execCurl=true		# whether to run curl(1)
+  addMeta=true		# whether to run metadata script on downloaded files
 
   suffix=jpg		# file suffix of images on the NOAA server
 
@@ -51,16 +52,16 @@ Globals=(
   urlPathBase="https://cdn.star.nesdis.noaa.gov/GOES17/ABI/SECTOR/NP/GEOCOLOR"
 
   oDirPrefix=NOAA	# output directory name prefix
-  oDir=			# gets set to prefix-YY.mm.dd-resolution
+  oDir=${nil}		# sets to prefix-YY.mm.dd-resolution
 
   oNamePrefix=noaa	# out filenames prefix
-  oName=		# gets set to prefix.#1.#2.suffix in curl glob notation
+  oName=		# sets to prefix.#1.#2.suffix in curl glob notation
 
-  oPath=		# gets set to oDir/oName
+  oPath=		# sets to oDir/oName
 
-  theUrl=		# gets set to current hour in curl notation
+  theUrl=		# sets to current hour in curl notation
 
-  curlLimitRate=1200k	# sets a reasonable bandwidth rate for downloads
+  curlRateLimit=2000k	# set to a reasonable bandwidth rate for downloads
 
   tagScript="./02-AddTags.sh"	# script to call to add metadata
   
@@ -70,6 +71,85 @@ Globals=(
 
   #	main()
 
+  #     Copy command line args and place in argv array and parse
+  #
+  #     Note use of IFS is set only for the following command (there's 
+  #     no semicolon). In this case items are only split on \n, not
+  #     spaces or tabs so the user can passed quoted strings with spaces
+  #     as a single argument.
+  #
+  IFS=$'\n' argv=($*)
+  argc=${#argv[@]}
+  let cnt=($argc - 0)   # last args don't get parsed as options
+
+  for ((i=0; i<$cnt; i++)); do
+
+    arg="${argv[$i]}"
+
+    case "${arg}" in
+      "-am" | "--addMeta" )
+	let i++
+	SetGlobalVal addMeta "${argv[@]:$i:1}"
+	;;
+      "-d" | "--desc" )
+	let i++
+	SetGlobalVal descPart "${argv[@]:$i:1}"
+	;;
+      "-ec" | "--execCurl" )
+	let i++
+	SetGlobalVal execCurl "${argv[@]:$i:1}"
+	;;
+      "-h" | "--help"   ) Usage ;;
+      "-he" | "--hourEnd" )
+	let i++
+	SetGlobalVal hourEnd "${argv[@]:$i:1}"
+	;;
+      "-hs" | "--hourStart" )
+	let i++
+	SetGlobalVal hourStart "${argv[@]:$i:1}"
+	;;
+      "-i" | "--interval" )
+	let i++
+	SetGlobalVal interval "${argv[@]:$i:1}"
+	;;
+      "-nd" | "--numberOfDays" )
+	let i++
+	SetGlobalVal numberOfDays "${argv[@]:$i:1}"
+	;;
+      "-odp" | "--outDirPrefix" )
+	let i++
+	SetGlobalVal oDirPrefix "${argv[@]:$i:1}"
+	;;
+      "-onp" | "--outNamePrefix" )
+	let i++
+	SetGlobalVal oNamePrefix "${argv[@]:$i:1}"
+	;;
+      "-od" | "--outDir" )
+	let i++
+	SetGlobalVal oDir "${argv[@]:$i:1}"
+	;;
+      "-r" | "--resolution" )
+	let i++
+	SetGlobalVal resolution "${argv[@]:$i:1}"
+	;;
+      "-rl" | "--rateLimit" )
+	let i++
+	SetGlobalVal curlRateLimit "${argv[@]:$i:1}"
+	;;
+      "-s" | "--suffix" ) 
+       let i++
+       SetGlobalVal suffix "${argv[@]:$i:1}"
+       ;;
+      "-ub" | "--urlBase" ) 
+       let i++
+       SetGlobalVal urlPathBase "${argv[@]:$i:1}"
+       ;;
+      * )
+        echo -e "${Prog}. Bailing. Unrecognized option: '${arg}'."
+        exit 1
+    esac
+
+  done		# eo for i
 
   #	CONSTRUCTING FILE NAME PART FOR CURL
   #
@@ -130,6 +210,10 @@ Globals=(
   firstDay=$( echo "$theDay - $theNumberOfDays + 1" | bc -l)
   lastDay=$theDay
 
+  #	Save the days in case we need them elsewere
+#  SetGlobalVal firstDay ${firstDay}
+#  SetGlobalVal lastDay ${lastDay}
+
   #	curl will glob the range in the brackets.
   #
   #	globbing order can be referenced for output filenames by their
@@ -140,6 +224,7 @@ Globals=(
   #
   dayRange=$( printf "[%.3d-%.3d]" $firstDay $lastDay )
 
+  SetGlobalVal dayRange "${dayRange}"
 #echo "dayRange: '${dayRange}'"
 
   #	HOURS PART
@@ -171,11 +256,13 @@ Globals=(
     echo "Warning. Setting hourStart to 0, was '${hourStart}'"
     hourStart=0
   fi
-  if [ $hourStart -lt 0 ]; then
+  hs=$( printf "%.0f" ${hourStart} )	# cast to int for check
+
+  if [ $hs -lt 0 ]; then
     echo "Warning. Setting hourStart to 0, was '${hourStart}'"
     hourStart=0
+    SetGlobalVal hourStart $hourStart
   fi
-  SetGlobalVal hourStart $hourStart	# in case it had to be fixed above
 
   #	Hour end
   #
@@ -185,11 +272,19 @@ Globals=(
     echo "Warning. Setting hourEnd to 23, was '${hourEnd}'"
     hourEnd=23
   fi
-  if [ $hourEnd -gt 23 ]; then
+  he=$( printf "%.0f" ${hourEnd} )	# cast to int for check
+
+  if [ $he -gt 23 ]; then
     echo "Warning. Setting hourEnd to 23, was '${hourEnd}'"
     hourEnd=23
+    SetGlobalVal hourEnd $hourEnd	
   fi
-  SetGlobalVal hourEnd $hourEnd		# in case it had to be fixed above
+
+  #	Check hourStart <= hourEnd
+  if [ $hs -gt $he ]; then
+    echo "Bailing. hourStart is greater than hourEnd."
+    exit 1
+  fi
 
   #	Check the interval values, this gets used in PrbuildHoursArray
   #	for constructing the curl glob range
@@ -199,15 +294,16 @@ Globals=(
   if [ "${minsInterval}" == "${nil}" ]; then
     minsInterval=10
   fi
-  if [ $minsInterval -lt 0 ]; then
+  tmpI=$( printf "%.0f" ${minsInterval} )	# cast to int for check
+
+  if [ $tmpI -lt 0 ]; then
     echo "Setting snapshot minute interval to 0, was '${minsInterval}'"
     minsInterval=0
   fi
-  if [ $minsInterval -gt 30 ]; then
+  if [ $tmpI -gt 30 ]; then
     echo "Setting snapshot minute interval to 30, was '${minsInterval}'"
     minsInterval=30
   fi
-
   SetGlobalVal interval $minsInterval	# in case it had to be fixed above
 
   #	This formats in curls globbed pattern for each of 24 hours as 
@@ -256,13 +352,36 @@ Globals=(
 
   if [ "${oDirPrefix}" == "${nil}" ]; then
     oDirPrefix="NOAA"
+    SetGlobalVal oDirPrefix $oDirPrefix		# store it
   fi
-  SetGlobalVal oDirPrefix $oDirPrefix		# in case it had to be fixed
 
-  oDate=$( date +"%Y.%m.%d" )			# set to today's yymmdd
-  oDir="${oDirPrefix}-${oDate}-${resolution}"
 
-  SetGlobalVal oDir $oDir
+  oDir=$( GetGlobalVal oDir )
+
+  #	If the user didn't override via the command line, set a default
+  #
+  if [ "${oDir}" == "${nil}" ]; then
+#  oDate=$( date +"%Y.%m.%d" )			# set to today's yymmdd
+#    oDir="${oDirPrefix}-${oDate}-${resolution}"
+    oDir="${oDirPrefix}-${dayRange}-${resolution}"
+    SetGlobalVal oDir $oDir
+  fi
+
+  #	Create the output directory and store some extended attributes
+  #	in it.
+  #
+  if [ ! -d "${oDir}" ]; then
+    mkdir -p "${oDir}"
+  fi
+
+  #	Create, 
+  #
+  theData="${firstDay}${Xseperator}${lastDay}${Xseperator}${oDir}"
+
+  SetGlobalVal $XattrNameForDir "${theData}"
+
+  UpdateDirXattrData $XattrNameForDir "${oDir}"
+
 
   #	If the output dir exists, append a higher, padded number (up to 10)
   #	and use that instead.
@@ -270,19 +389,19 @@ Globals=(
   #	This might be redundant now due to adding the metadata script 
   #	execution, so I might remove it.
   #
-  if [ -d "${oDir}" ]; then
-
-    for ((i=1; i <= 10; i++)); do
-
-      newName=$( printf "${oDir}-%.2d" $i)
-
-      if [ ! -d "${newName}" ]; then
-        oDir="${newName}"
-        break				# will break out of for loop
-      fi
-
-    done		# eo for i
-  fi		# eo if -d
+#  if [ -d "${oDir}" ]; then
+#
+#    for ((i=1; i <= 10; i++)); do
+#
+#      newName=$( printf "${oDir}-%.2d" $i)
+#
+#      if [ ! -d "${newName}" ]; then
+#        oDir="${newName}"
+#        break				# will break out of for loop
+#      fi
+#
+#    done		# eo for i
+#  fi		# eo if -d
 
 
   #	Image file suffix on noaa servers
@@ -346,19 +465,27 @@ Globals=(
   done
 
 
-  addTags=$( GetGlobalVal addTags )
-
-  #     If the variable 'addTags' is not set, just exit 0.
+  #	If there's no outDir, no need to run the metadata script
   #
-  if [ "${addTags}" != "1" ]; then
-    echo -e "Not adding tags to the downloaded files, addTags needs to be 1"
+  if [ ! -d "${oDir}" ]; then
+    echo -e "Exiting. No such directory: '${oDir}'"
+    exit 0
+  fi
+
+  addMeta=$( GetGlobalVal addMeta )
+
+  #     If the variable 'addMeta' is not set, just exit 0.
+  #
+  if [ "${addMeta}" != "true" ]; then
+    echo -e "Exiting. Not adding metadata to the downloaded files,"
+    echo -e "Global addMeta isn't set to 'true'"
     exit 0
   fi
 
   tagScript=$( GetGlobalVal tagScript )
 
   if [ "${tagScript}" == "${nil}" ]; then
-    echo -e "Set tagScript in Global array to add memtadata to downloads."
+    echo -e "Set tagScript in Global array to add metadata to downloads."
     exit 0
   fi
 
@@ -372,6 +499,6 @@ Globals=(
   #	If we got this far, run the script that generates metadata on the files
   #	in $oDir
   #
-#  "${tagScript}" --suffix ${suffix} "${oDir}"
+  "${tagScript}" --suffix ${suffix} "${oDir}"
 
 exit 0
