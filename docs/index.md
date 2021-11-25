@@ -16,6 +16,9 @@
 ./category/video/index.html
 ./category/video/page/2/index.html
 ./category/video/page/3/index.html
+./cvresume/index.html
+./cvresume/rpk-resume-v1.1.pdf
+./cvresume/rpk-resume-v1.2.pdf
 ./entries/index.html
 ./events/index.html
 ./events/ldc-1999-front/index.html
