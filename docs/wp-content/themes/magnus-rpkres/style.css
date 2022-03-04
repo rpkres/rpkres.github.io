@@ -51,8 +51,6 @@ textarea {
   background-color: var( --theme-bg-0 );
   color: var( --theme-black-0 );
   font-family: "Pika", serif;
-
-
   font-size: 1.125em;
   line-height: 1.4;
 }
@@ -67,9 +65,6 @@ textarea {
 .nav-next a::after {
   content: " ❯";
 }
-
-
-
 
 
 .entry-header .entry-meta, .entry-footer {
@@ -97,10 +92,6 @@ blockquote {
   font-size: 1em;
   line-height: 1.4;
 }
-
-
-
-
 
 blockquote {
   background: var( --theme-white-3 );
@@ -150,9 +141,6 @@ a:hover, a:focus, a:active {
   color: var( --theme-grey-1 );
 }
 
-
-
-
 .sidebar-toggled .sidebar-toggle:hover span:before, 
 .sidebar-toggled .sidebar-toggle:hover span:after {
     background: var( --theme-red-1 );
@@ -177,18 +165,18 @@ a:hover, a:focus, a:active {
 
 
 .blog-home-content article .entry-header {
-
   margin: 0;
   padding: 0;
 }
 
 
-
 .blog-home-content article .entry-header .entry-title a {
+  position: relative;
 font-size: 1.25em;
   display: inline-block;
     color: var( --theme-white-0 );
 }
+
 .blog-home-content article .entry-header .entry-title a:hover,
 .blog-home-content article .entry-header .entry-title a:focus,
 .blog-home-content article .entry-header .entry-title a:active {
@@ -237,9 +225,6 @@ font-size: 1.25em;
   color: var( --theme-red-1 );
 }
 .site-footer a img {
-
-
-
   -webkit-transition: all 0.2s ease;
      -moz-transition: all 0.2s ease;
           transition: all 0.2s ease;
@@ -247,7 +232,6 @@ font-size: 1.25em;
 }
 
 .site-footer a:hover img {
-
   -webkit-transition: all 0.4s ease;
      -moz-transition: all 0.4s ease;
           transition: all 0.4s ease;
@@ -271,9 +255,6 @@ font-size: 1.25em;
 
 
 
-
-
-
 .site-header .header-navigation .menu-header-container ul li a::first-letter {
   opacity: 0.95;
   color: var( --theme-red-1 );
@@ -286,11 +267,8 @@ font-size: 1.25em;
 }
 
 
-
-
 .site-branding h1 a,
 .site-title a img {
-
 
   opacity: 0.8;
 
@@ -299,9 +277,7 @@ font-size: 1.25em;
           transition: all 0.4s ease;
            transform: scale(0.85) rotate(0deg);
 
-
 }
-
 
 
 
@@ -316,8 +292,6 @@ font-size: 1.25em;
            transform: scale(0.9) rotate(-360.0deg);
 
 }
-
-
 
 
 
@@ -379,11 +353,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
-
-
-
 .table-pretendlogo {
   margin: auto;
   text-align: center;
@@ -438,7 +407,6 @@ text-align: center;
 }
 
 .content-area h2 {
-
   margin-top: 2em;
   font-size: 1.75em;
 }
@@ -447,10 +415,7 @@ text-align: center;
 .section-inner h1 {
   font-size: 4.0em;
 
-
-
 }
-
 
 
 @media (max-width: 480px) {
@@ -458,14 +423,6 @@ text-align: center;
   font-size: 1.929em; 
   } 
 }
-
-
-
-
-
-
-
-
 
 
 @media (min-width: 900px) {
@@ -496,7 +453,6 @@ text-align: center;
   font-weight: 500;
   text-transform: uppercase;
 }
-
 .site-header .header-navigation a:hover {
   color: var( --theme-white-0 );
 }
@@ -518,8 +474,6 @@ text-align: center;
 
 
 .site-footer .footer-navigation {
-
-
   text-align: center;
   font-family: "Kamera", sans-serif;
   font-weight: 500;
@@ -535,8 +489,6 @@ text-align: center;
     width: 100%;
     height: 66.66vh;
 }
-
-
 
 
 @media (max-width: 800px) {
@@ -572,8 +524,6 @@ text-align: center;
     display: block;
     width: 100%;
     font-size: 0.8em;
-
-
     letter-spacing: 0.1316872428em;
     color: var( --theme-black-4 );
     text-decoration: none; 
@@ -582,8 +532,6 @@ text-align: center;
   text-transform: uppercase;
 }
 .site-footer .footer-navigation a:hover {
-
-
     color: var( --theme-black-0 );
 }
 
@@ -599,15 +547,10 @@ text-align: center;
 }
 
 
-
-
-
-
 .blog-home-content article .entry-header {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 @keyframes fadein-images {
   0% {
@@ -714,15 +657,11 @@ text-align: center;
 }
 
 .site-footer .footer-navigation .menu-footer-container .footer-logo {
-
-
     -webkit-animation: fadein 0.3s ease-out 0.5s backwards;
        -moz-animation: fadein 0.3s ease-out 0.5s backwards;
             animation: fadein 0.3s ease-out 0.5s backwards;
     position: relative;
-
     opacity: 1;
-
     -webkit-transition-property: opacity;
        -moz-transition-property: opacity;
             transition-property: opacity;
@@ -753,7 +692,6 @@ text-align: center;
     list-style: none;
     margin: 0;
     padding-left: 0;
-
     text-align: center;
     line-height: 0; 
 }
@@ -791,13 +729,10 @@ video {
   display: inline-block;
   text-decoration: none;
   font-family: "Kamera", sans-serif;
-
   clear: both;
   text-transform: uppercase;
   line-height: 1; 
 }
-
-
 .next, .prev {
   font-size: 1em !important;
   letter-spacing: 0.10em !important;
@@ -805,30 +740,21 @@ video {
 
 .nav-links {
 width: 100%;
-
-
 }
 
 
 span.prev.page-numbers,
 span.next.page-numbers {
-
-
-
   color: var( --theme-bg-0 );
 }
 span.prev.page-numbers,
 a.prev.page-numbers {
-
-
   padding-left: 1.0em;
   padding-right: 4em;
   text-align: left;
 }
 span.next.page-numbers,
 a.next.page-numbers {
-
-
   padding-left: 4em;
   padding-right: 1.0em;
   text-align: right;
@@ -839,7 +765,6 @@ a.page-numbers {
   padding-left: 0.5em;
   text-align: center;
 }
-
 span.page-numbers.current {
   font-size: 1.5em;
   letter-spacing: 0.5em;
@@ -848,17 +773,13 @@ span.page-numbers.current {
 }
 
 
-
-
 .site-main li a {
   font-family: "Kamera", sans-serif;
 font-style: thin;
   font-size: 1.2em;
-
   text-transform: uppercase;
   text-decoration: none;
 }
-
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
   text-decoration: none;
@@ -875,7 +796,6 @@ h4 a, h5 a, h6 a {
 
 .navigation.pagination {
   padding-top: 2.0em;
-
   margin: 0 auto;
   display: block;
   max-width: var( --theme-main-width );
@@ -885,20 +805,17 @@ h4 a, h5 a, h6 a {
 .events-details ul {
   margin-top: 1.0em;
   margin-left: -0.6em;
-  margin-bottom: 3.0em;			
+  margin-bottom: 3.0em;
 }
 
 .events-summary {
   color: var( --theme-grey-6 );
-
   font-family: "Pika", serif;
-
   font-weight: 400;
   font-size: 0.8em;
   margin-top: -1em;
   text-transform: uppercase;
 }
-
 .events-summary:before {
   margin-left: 0.2em;
   content: "";
@@ -906,11 +823,6 @@ h4 a, h5 a, h6 a {
 .events-summary:after {
   content: "…";
 }
-
-
-
-
-
 
 .post-navigation, .hentry {
    margin: 0 0 0.75em;
@@ -925,10 +837,6 @@ h4 a, h5 a, h6 a {
 
 
 
-
-
-
-
 .bigger {
   font-size: larger;
 }
@@ -940,24 +848,12 @@ code, kbd, tt, var {
 }
 
 
+
 .attachment-medium.size-medium {
   display: block;
   margin: auto;
   max-width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 li {
   margin-bottom: 1em;
@@ -974,12 +870,8 @@ li > ol {
 
 
 
-
-
 :root {
   --theme-main-width:	820px;
-
-  
 
   --section-blur-N:	2.00em;
   --section-blur-L:	1.50em;
@@ -994,16 +886,12 @@ li > ol {
   --section-opacity-normal: 0.4;
   --section-opacity-hover:  0.8;
 
-
-
   --section-brightness-N: 140%;
   --section-brightness-L: 120%;
-
   --section-brightness-C: 100%;
 
   --section-saturate-N: 140%;
   --section-saturate-L: 100%;
-
   --section-saturate-C: 100%;
 
   --section-huerotate-N: 330.0deg;
@@ -1014,10 +902,6 @@ li > ol {
   --section-grayscale-C: 40%;
 
   --section-zoom-N:	2.0;
-
-
-
-
   --section-zoom-C:	1.1;
 
   --section-rotate-N:	 6deg;
@@ -1049,19 +933,14 @@ li > ol {
   --pulseHeader-transform-N:   scale( var(--section-zoom-N) );
   --pulseHeader-transform-C:   scale( var(--section-zoom-C) );
 
-
-
-
   --theme-black-0:	rgb(0,0,0);
   --theme-black-4: 	rgba(0, 0, 0, 0.5);
 
-
-
-
-
-
+  
   --theme-white-0:	rgb(255, 253, 247);	
+  
   --theme-white-2:	rgb(242, 240, 234);	
+  
   --theme-white-3: 	rgb(230, 228, 222);	
   --theme-white-4: 	rgba(255, 253, 247, 0.6);
 
@@ -1069,12 +948,9 @@ li > ol {
   --theme-grey-2: 	rgb(169, 169, 169);
   --theme-grey-2a: 	rgba(169, 169, 169, 0.4);
 
-
   --theme-grey-3:	rgb(126, 126, 128);
   --theme-grey-4:	rgb(114, 114, 126);
-
   --theme-grey-5:	rgb( 64,  64,  76);
-
   --theme-grey-6:	rgb(126, 126, 128);
 
   --theme-red-1: 	rgb(216,  30,   0);
