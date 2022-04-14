@@ -43,6 +43,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 
+
 body,
 button,
 input,
@@ -50,8 +51,10 @@ select,
 textarea {
   background-color: var( --theme-bg-0 );
   color: var( --theme-black-0 );
-  font-family: "Pika", serif;
-  font-size: 1.125em;
+  font-family: "KFMono", serif;
+
+  font-weight: 300;
+  font-size: 1.0em;
   line-height: 1.4;
 }
 
@@ -172,9 +175,9 @@ a:hover, a:focus, a:active {
 
 .blog-home-content article .entry-header .entry-title a {
   position: relative;
-font-size: 1.25em;
-  display: inline-block;
-    color: var( --theme-white-0 );
+ font-size: 1.25em;
+   display: inline-block;
+     color: var( --theme-white-0 );
 }
 
 .blog-home-content article .entry-header .entry-title a:hover,
@@ -255,6 +258,8 @@ font-size: 1.25em;
 
 
 
+
+
 .site-header .header-navigation .menu-header-container ul li a::first-letter {
   opacity: 0.95;
   color: var( --theme-red-1 );
@@ -298,9 +303,10 @@ font-size: 1.25em;
 
 h1:first-letter {
 
+
+
+
 display: inline-block;
-font-size: 300%;
-  letter-spacing: 0.02em;
   color: var( --theme-red-1 );
 }
 
@@ -320,6 +326,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
 }
+
+
 
 .entry-header .entry-meta,
 .entry-footer {
@@ -347,8 +355,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wp-caption-text {
-  font-size: .7em;
-  line-height: .9em;
+
+  font-size: 0.8em;
+  line-height: 1.0em;
 }
 
 
@@ -402,9 +411,6 @@ text-align: center;
 
 
 
-.content-area h1 {
-  font-size: 2.0em;
-}
 
 .content-area h2 {
   margin-top: 2em;
@@ -414,13 +420,15 @@ text-align: center;
 
 .section-inner h1 {
   font-size: 4.0em;
-
+}
+.content-area h1 {
+  font-size: 3.0em;
 }
 
 
 @media (max-width: 480px) {
   .site-main h1 {
-  font-size: 1.929em; 
+  font-size: 2.0em; 
   } 
 }
 
@@ -775,8 +783,9 @@ span.page-numbers.current {
 
 .site-main li a {
   font-family: "Kamera", sans-serif;
-font-style: thin;
+ font-weight: 500;
   font-size: 1.2em;
+
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -810,7 +819,7 @@ h4 a, h5 a, h6 a {
 
 .events-summary {
   color: var( --theme-grey-6 );
-  font-family: "Pika", serif;
+  font-family: "KFMono", serif;
   font-weight: 400;
   font-size: 0.8em;
   margin-top: -1em;

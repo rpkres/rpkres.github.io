@@ -1,44 +1,137 @@
 
 
 
-@font-face {
-  font-family: 'Pika';
-  font-weight: 400;
 
-  src: local('Pika'), local('Pike Regular'), local('Pika-Regular'), 
-  url('Fonts/Pika/PikaRegular.ttf')  format('ttf'),
-  url('Fonts/Pika/PikaRegular.otf')  format('opentype'),
-  url('Fonts/Pika/PikaRegular.woff') format('woff');
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 300;
+  font-style: normal;
+
+  src: local('KF Mono Light'), local('KFMono-Light'), 
+  url('Fonts/KFMono/KFMono-Light.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-Light.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-Light.woff') format('woff');
 }
-
 @font-face {
-  font-family: 'Pika';
-  font-weight: 700;
-
-  src: local('Pika Bold'), local('Pika-Bold'), 
-  url('Fonts/Pika/PikaBold.ttf')  format('ttf'),
-  url('Fonts/Pika/PikaBold.otf')  format('opentype'),
-  url('Fonts/Pika/PikaBold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Pika';
+  font-family: 'KFMono';
+  font-weight: 300;
   font-style: italic;
-  font-weight: 400;
 
-  src: local('Pika Italic'), local('Pika-Italic'), 
-  url('Fonts/Pika/PikaItalic.ttf')  format('ttf'),
-  url('Fonts/Pika/PikaItalic.otf')  format('opentype'),
-  url('Fonts/Pika/PikaItalic.woff') format('woff');
+  src: local('KF Mono Light Italic'), local('KFMono-LightItalic'), 
+  url('Fonts/KFMono/KFMono-LightItalic.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-LightItalic.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-LightItalic.woff') format('woff');
 }
 
+
 @font-face {
-  font-family: 'Pika';
+  font-family: 'KFMono';
+  font-weight: 400;
+  font-style: normal;
+
+  src: local('KF Mono Regular'), local('KFMono-Regular'), 
+  url('Fonts/KFMono/KFMono-Regular.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-Regular.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 400;
+  font-style: italic;
+
+  src: local('KF Mono Regular Italic'), local('KFMono-RegularItalic'), 
+  url('Fonts/KFMono/KFMono-RegularItalic.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-RegularItalic.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-RegularItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'KFMono';
   font-weight: 500;
-  src: local('Pika Beck'), local('Pika-Beck'), 
-  url('Fonts/Pika/PikaBeck.ttf')  format('ttf'),
-  url('Fonts/Pika/PikaBeck.otf')  format('opentype'),
-  url('Fonts/Pika/PikaBeck.woff') format('woff');
+  font-style: normal;
+
+  src: local('KF Mono Medium'), local('KFMono-Medium'), 
+  url('Fonts/KFMono/KFMono-Medium.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-Medium.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 500;
+  font-style: italic;
+
+  src: local('KF Mono Medium Italic'), local('KFMono-MediumItalic'), 
+  url('Fonts/KFMono/KFMono-MediumItalic.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-MediumItalic.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 600;
+  font-style: normal;
+
+  src: local('KF Mono Semibold'), local('KFMono-Semibold'), 
+  url('Fonts/KFMono/KFMono-Semibold.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-Semibold.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 600;
+  font-style: italic;
+
+  src: local('KF Mono Semibold Italic'), local('KFMono-SemiboldItalic'), 
+  url('Fonts/KFMono/KFMono-SemiboldItalic.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-SemiboldItalic.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-SemiboldItalic.woff') format('woff');
+
+}
+
+
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 700;
+  font-style: normal;
+
+  src: local('KF Mono Bold'), local('KFMono-Bold'), 
+  url('Fonts/KFMono/KFMono-Bold.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-Bold.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 700;
+  font-style: italic;
+
+  src: local('KF Mono Bold Italic'), local('KFMono-BoldItalic'), 
+  url('Fonts/KFMono/KFMono-BoldItalic.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-BoldItalic.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 900;
+  font-style: normal;
+
+  src: local('KF Mono Heavy'), local('KFMono-Heavy'), 
+  url('Fonts/KFMono/KFMono-Heavy.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-Heavy.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-Heavy.woff') format('woff');
+}
+@font-face {
+  font-family: 'KFMono';
+  font-weight: 900;
+  font-style: italic;
+
+  src: local('KF Mono Heavy Italic'), local('KFMono-HeavyItalic'), 
+  url('Fonts/KFMono/KFMono-HeavyItalic.ttf')  format('ttf'),
+  url('Fonts/KFMono/KFMono-HeavyItalic.otf')  format('opentype'),
+  url('Fonts/KFMono/KFMono-HeavyItalic.woff') format('woff');
 }
 
 
@@ -46,6 +139,7 @@
 @font-face {
   font-family: 'Kamera';
   font-weight: 100;
+  font-style: normal;
 
   src: local('Kamera Thin'), local('Kamera-Thin'),
   url('Fonts/Kamera/Kamera-Thin.ttf')  format('ttf'),
@@ -54,6 +148,7 @@
 @font-face {
   font-family: 'Kamera';
   font-weight: 300;
+  font-style: normal;
 
   src: local('Kamera Light'), local('Kamera-Light'),
   url('Fonts/Kamera/Kamera-Light.ttf')  format('ttf'),
@@ -62,6 +157,7 @@
 @font-face {
   font-family: 'Kamera';
   font-weight: 400;
+  font-style: normal;
 
   src: local('Kamera'), local('Kamera Regular'), local('Kamera-Regular'),
   url('Fonts/Kamera/Kamera-Regular.ttf')  format('ttf'),
@@ -70,6 +166,7 @@
 @font-face {
   font-family: 'Kamera';
   font-weight: 500;
+  font-style: normal;
 
   src: local('Kamera Medium'), local('Kamera-Medium'),
   url('Fonts/Kamera/Kamera-Medium.ttf')  format('ttf'),
@@ -78,6 +175,7 @@
 @font-face {
   font-family: 'Kamera';
   font-weight: 700;
+  font-style: normal;
 
   src: local('Kamera Bold'), local('Kamera-Bold'),
   url('Fonts/Kamera/Kamera-Bold.ttf')  format('ttf'),
@@ -86,6 +184,7 @@
 @font-face {
   font-family: 'Kamera';
   font-weight: 900;
+  font-style: normal;
 
   src: local('Kamera Black'), local('Kamera-Black'),
   url('Fonts/Kamera/Kamera-Black.ttf')  format('ttf'),
