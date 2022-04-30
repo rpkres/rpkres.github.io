@@ -10,6 +10,20 @@ dmgPath="awdpx"			# name of physical dmg file on disc
 #	various empty image formats. UDIF gets set to the size you
 #	specify, the others are dynamic and grow as needed.
 #
+#	To open the man page for hdiutl(1) in Preview on the mac, type the 
+#	following on the command line:
+#
+#		man -t hdiutil | open -f -a Preview.app
+#	
+#	If the type is dynamic (SPARSE..) you can reclaim space at a later
+#	time by running:
+#
+#		hdiutil compact "${iFile}"
+#
+#	or resize it it it's +HFS or APFS:
+#
+#		hdiutil resize -size 2g "${iFile}"
+#
 type="UDIF"
 #type="SPARSE"
 #type="SPARSEBUNDLE"
