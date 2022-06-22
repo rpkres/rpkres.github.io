@@ -34,12 +34,14 @@
   url('Fonts/KFMono/KFMono-Regular.otf')  format('opentype'),
   url('Fonts/KFMono/KFMono-Regular.woff') format('woff');
 }
+
+
 @font-face {
   font-family: 'KFMono';
   font-weight: 400;
   font-style: italic;
 
-  src: local('KF Mono Regular Italic'), local('KFMono-RegularItalic'), 
+  src: local('KF Mono Regular Italic'), local('KFMono-RegularItalic'),
   url('Fonts/KFMono/KFMono-RegularItalic.ttf')  format('ttf'),
   url('Fonts/KFMono/KFMono-RegularItalic.otf')  format('opentype'),
   url('Fonts/KFMono/KFMono-RegularItalic.woff') format('woff');

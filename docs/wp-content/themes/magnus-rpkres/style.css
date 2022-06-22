@@ -52,11 +52,11 @@ textarea {
   background-color: var( --theme-bg-0 );
   color: var( --theme-black-0 );
   font-family: "KFMono", serif;
-
-  font-weight: 300;
-  font-size: 1.0em;
+  font-weight: 400;
+  font-size: 1.1em;
   line-height: 1.4;
 }
+
 
 
 .nav-previous, .nav-next {
@@ -175,7 +175,7 @@ a:hover, a:focus, a:active {
 
 .blog-home-content article .entry-header .entry-title a {
   position: relative;
- font-size: 1.25em;
+ font-size: 1.5em;
    display: inline-block;
      color: var( --theme-white-0 );
 }
@@ -183,6 +183,7 @@ a:hover, a:focus, a:active {
 .blog-home-content article .entry-header .entry-title a:hover,
 .blog-home-content article .entry-header .entry-title a:focus,
 .blog-home-content article .entry-header .entry-title a:active {
+  opacity: 1.0;
   color: var( --theme-red-1 );
 }
 .blog-home-content article .entry-header .entry-title a::first-letter {
@@ -260,8 +261,9 @@ a:hover, a:focus, a:active {
 
 
 
+
 .site-header .header-navigation .menu-header-container ul li a::first-letter {
-  opacity: 0.95;
+  opacity: 1.0;
   color: var( --theme-red-1 );
 }
 .site-header .header-navigation .menu-header-container ul li a:hover:first-letter,
@@ -270,6 +272,8 @@ a:hover, a:focus, a:active {
   opacity: 1.0;
   color: var( --theme-white-0 ); 
 }
+
+
 
 
 .site-branding h1 a,
@@ -283,6 +287,7 @@ a:hover, a:focus, a:active {
            transform: scale(0.85) rotate(0deg);
 
 }
+
 
 
 
@@ -354,8 +359,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var( --theme-red-1 );
 }
 
-.wp-caption-text {
 
+.wp-caption-text {
   font-size: 0.8em;
   line-height: 1.0em;
 }
@@ -477,7 +482,7 @@ text-align: center;
 .post-navigation .nav-previous a,
 .post-navigation .nav-next a {
   font-family: "Kamera", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 
@@ -489,7 +494,7 @@ text-align: center;
   letter-spacing: 0.1316872428em;
   line-height: 1;
     font-size: 1.1em;
-  opacity: 1; 
+  opacity: 1.0; 
 }
 
 
@@ -560,108 +565,197 @@ text-align: center;
   margin-right: auto;
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
 @keyframes fadein-images {
   0% {
-    opacity: 0;
+    opacity: 0.0;
   }
   100% {
-    opacity: var( --section-opacity-first-normal );
+    opacity: var( --section-opacity-first-E );
   }
 }
 
 
-.blog-home-content article:first-child .section-image {
-  opacity: var( --section-opacity-first-normal );
-}
 .blog-home-content article:first-child .section-image:hover {
-  opacity: var( --section-opacity-first-hover );
-}
-.blog-home-content .section-image {
-  opacity: var( --section-opacity-normal );
+  opacity: var( --section-opacity-first-H );
 }
 .blog-home-content .section-image:hover {
-  opacity: var( --section-opacity-hover  );
+  opacity: var( --section-opacity-H  );
 }
 
 
-@keyframes image-pulse {
-  0% {
-       -webkit-filter: var( --pulseImage-Filter-N );
-          -moz-filter: var( --pulseImage-Filter-N );
-            -o-filter: var( --pulseImage-Filter-N );
-               filter: var( --pulseImage-Filter-N );
 
-    -webkit-transform: var( --pulseImage-transform-N );
-       -moz-transform: var( --pulseImage-transform-N );
-         -o-transform: var( --pulseImage-transform-N );
-            transform: var( --pulseImage-transform-N );
+@keyframes titleFilterKeys {
+ 0% {
+       -webkit-filter: var( --title-Filters-B );
+          -moz-filter: var( --title-Filters-B );
+            -o-filter: var( --title-Filters-B );
+               filter: var( --title-Filters-B );
   }
-  95%, 100% {
-       -webkit-filter: var( --pulseImage-Filter-C );
-          -moz-filter: var( --pulseImage-Filter-C );
-            -o-filter: var( --pulseImage-Filter-C );
-               filter: var( --pulseImage-Filter-C );
-
-    -webkit-transform: var( --pulseImage-transform-C );
-       -moz-transform: var( --pulseImage-transform-C );
-         -o-transform: var( --pulseImage-transform-C );
-            transform: var( --pulseImage-transform-C );
+  100% {
+       -webkit-filter: var( --title-Filters-E );
+          -moz-filter: var( --title-Filters-E );
+            -o-filter: var( --title-Filters-E );
+               filter: var( --title-Filters-E );
   } 
 }
 
-@keyframes pulseHeader {
-  0% {
-       -webkit-filter: var( --pulseHeader-Filter-N );
-          -moz-filter: var( --pulseHeader-Filter-N );
-            -o-filter: var( --pulseHeader-Filter-N );
-               filter: var( --pulseHeader-Filter-N );
-
-    -webkit-transform: var( --pulseHeader-transform-N );
-       -moz-transform: var( --pulseHeader-transform-N );
-         -o-transform: var( --pulseHeader-transform-N );
-            transform: var( --pulseHeader-transform-N );
+@keyframes titleTransKeys {
+ 0% {
+    -webkit-transform: var( --title-Transform-B );
+       -moz-transform: var( --title-Transform-B );
+         -o-transform: var( --title-Transform-B );
+            transform: var( --title-Transform-B );
   }
   100% {
-       -webkit-filter: var( --pulseHeader-Filter-C );
-          -moz-filter: var( --pulseHeader-Filter-C );
-            -o-filter: var( --pulseHeader-Filter-C );
-               filter: var( --pulseHeader-Filter-C );
+    -webkit-transform: var( --title-Transform-E );
+       -moz-transform: var( --title-Transform-E );
+         -o-transform: var( --title-Transform-E );
+            transform: var( --title-Transform-E );
+  } 
+}
 
-    -webkit-transform: var( --pulseHeader-transform-C );
-       -moz-transform: var( --pulseHeader-transform-C );
-         -o-transform: var( --pulseHeader-transform-C );
-            transform: var( --pulseHeader-transform-C );
+
+@keyframes pulseImageFilterKeys {
+ 0% {
+       -webkit-filter: var( --pulseImage-Filters-B );
+          -moz-filter: var( --pulseImage-Filters-B );
+            -o-filter: var( --pulseImage-Filters-B );
+               filter: var( --pulseImage-Filters-B );
+  }
+  100% {
+       -webkit-filter: var( --pulseImage-Filters-E );
+          -moz-filter: var( --pulseImage-Filters-E );
+            -o-filter: var( --pulseImage-Filters-E );
+               filter: var( --pulseImage-Filters-E );
+  } 
+}
+
+@keyframes pulseImageTransKeys {
+ 0% {
+    -webkit-transform: var( --pulseImage-Transform-B );
+       -moz-transform: var( --pulseImage-Transform-B );
+         -o-transform: var( --pulseImage-Transform-B );
+            transform: var( --pulseImage-Transform-B );
+  }
+  100% {
+    -webkit-transform: var( --pulseImage-Transform-E );
+       -moz-transform: var( --pulseImage-Transform-E );
+         -o-transform: var( --pulseImage-Transform-E );
+            transform: var( --pulseImage-Transform-E );
+  } 
+}
+
+@keyframes pulseHeaderKeys {
+  0% {
+       -webkit-filter: var( --pulseHeader-Filters-B );
+          -moz-filter: var( --pulseHeader-Filters-B );
+            -o-filter: var( --pulseHeader-Filters-B );
+               filter: var( --pulseHeader-Filters-B );
+
+    -webkit-transform: var( --pulseHeader-Transform-B );
+       -moz-transform: var( --pulseHeader-Transform-B );
+         -o-transform: var( --pulseHeader-Transform-B );
+            transform: var( --pulseHeader-Transform-B );
+  }
+  100% {
+       -webkit-filter: var( --pulseHeader-Filters-E );
+          -moz-filter: var( --pulseHeader-Filters-E );
+            -o-filter: var( --pulseHeader-Filters-E );
+               filter: var( --pulseHeader-Filters-E );
+
+    -webkit-transform: var( --pulseHeader-Transform-E );
+       -moz-transform: var( --pulseHeader-Transform-E );
+         -o-transform: var( --pulseHeader-Transform-E );
+            transform: var( --pulseHeader-Transform-E );
   } 
 }
 
 
 .blog-home-content article:first-child .section-image {
 
-  -webkit-animation: fadein-images 2s ease-out backwards, 
-	             image-pulse  20s ease-in-out infinite alternate;
-     -moz-animation: fadein-images22s ease-out backwards, 
-	             image-pulse  20s ease-in-out infinite alternate;
-          animation: fadein-images 2s ease-out backwards, 
-	             image-pulse  20s ease-in-out infinite alternate;
+  -webkit-animation-name: pulseImageFilterKeys, pulseImageTransKeys;
+  -webkit-animation-timing-function: linear, ease-out;
+
+  -webkit-animation-duration: var(--pulse-time-A);
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-name: pulseImageFilterKeys, pulseImageTransKeys;
+  -moz-animation-timing-function: linear, ease-out;
+
+  -moz-animation-duration: var(--pulse-time-A);
+  -moz-animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+
+  animation-name: pulseImageFilterKeys, pulseImageTransKeys;
+  animation-timing-function: ease-out, ease-out;
+
+  animation-duration: var(--pulse-time-A);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 
 }
 
+
+
+.blog-home-content article:first-child .entry-header {
+
+  -webkit-animation-name: titleTransKeys, titleFilterKeys;
+  -webkit-animation-timing-function: ease-out;
+
+  -webkit-animation-duration: var(--pulse-time-A);
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-name: titleTransKeys, titleFilterKeys;
+  -moz-animation-timing-function: ease-out;
+
+  -moz-animation-duration: var(--pulse-time-A);
+  -moz-animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+
+  animation-name: titleTransKeys, titleFilterKeys;
+  animation-timing-function: ease-out;
+
+  animation-duration: var(--pulse-time-A);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+
+.featured-image .site-header-image {
+  height: 128px;
+}
 
 .site-header-image {
-  -webkit-animation: fadein 1.2s ease-out backwards;
-     -moz-animation: fadein 1.2s ease-out backwards;
-          animation: fadein 1.2s ease-out backwards;
+  -webkit-animation: fadein 1.2s ease-out forwards;
+     -moz-animation: fadein 1.2s ease-out forwards;
+          animation: fadein 1.2s ease-out forwards;
 }
+
+
 
 
 
 .site-header-image .section-image {
-  -webkit-animation: fadein-images 1s ease-out backwards, 
-	             pulseHeader  15s ease-in-out infinite alternate;
-     -moz-animation: fadein-images 1s ease-out backwards, 
-	             pulseHeader  15s ease-in-out infinite alternate;
-          animation: fadein-images 1s ease-out backwards, 
-	             pulseHeader  15s ease-in-out infinite alternate;
+  background-position: 50% 27%;
+
+  animation-name: fadein-images, pulseHeaderKeys;
+  animation-timing-function: ease-out, ease-in-out;
+
+  animation-duration: 1s, var(--pulse-time-B);
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards, forwards;
 }
 
 .site-footer .footer-navigation .menu-footer-container .footer-logo {
@@ -669,7 +763,7 @@ text-align: center;
        -moz-animation: fadein 0.3s ease-out 0.5s backwards;
             animation: fadein 0.3s ease-out 0.5s backwards;
     position: relative;
-    opacity: 1;
+    opacity: 1.0;
     -webkit-transition-property: opacity;
        -moz-transition-property: opacity;
             transition-property: opacity;
@@ -737,17 +831,18 @@ video {
   display: inline-block;
   text-decoration: none;
   font-family: "Kamera", sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
   clear: both;
   text-transform: uppercase;
   line-height: 1; 
 }
 .next, .prev {
-  font-size: 1em !important;
   letter-spacing: 0.10em !important;
 }
 
 .nav-links {
-width: 100%;
+  width: 100%;
 }
 
 
@@ -768,24 +863,24 @@ a.next.page-numbers {
   text-align: right;
 }
 a.page-numbers {
-  font-size: 1.25em;
   letter-spacing: 0.5em;
   padding-left: 0.5em;
   text-align: center;
 }
+
 span.page-numbers.current {
-  font-size: 1.5em;
+  font-size: 125%;
   letter-spacing: 0.5em;
   padding-left: 0.5em;
   color: var( --theme-bg-5 );
 }
 
 
+
 .site-main li a {
   font-family: "Kamera", sans-serif;
  font-weight: 500;
   font-size: 1.2em;
-
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -879,68 +974,98 @@ li > ol {
 
 
 
+
+
 :root {
   --theme-main-width:	820px;
 
-  --section-blur-N:	2.00em;
-  --section-blur-L:	1.50em;
-  --section-blur-C:	0.00em;
+  --section-blur-B:	0.50em;
+  --section-blur-E:	0.15em;
 
-  --section-header-blur-N: var( --section-blur-N );
-  --section-header-blur-C: 0.25em;
 
-  --section-opacity-first-normal: 0.7;
-  --section-opacity-first-hover:  0.9;
+  --section-opacity-first-E: 0.6;
+  --section-opacity-first-H: 0.6;
 
-  --section-opacity-normal: 0.4;
-  --section-opacity-hover:  0.8;
+  --section-opacity-E: 0.6;
+  --section-opacity-H: 0.7;
 
-  --section-brightness-N: 140%;
-  --section-brightness-L: 120%;
-  --section-brightness-C: 100%;
+  --section-saturate-B: 20%;
+  --section-saturate-E: 0%;
 
-  --section-saturate-N: 140%;
-  --section-saturate-L: 100%;
-  --section-saturate-C: 100%;
+  --section-huerotate-B: 360.0deg;
+  --section-huerotate-E: 360.0deg;
 
-  --section-huerotate-N: 330.0deg;
-  --section-huerotate-C: 360.0deg;
+  --section-brightness-B: 100%;
+  --section-brightness-E: 90%;
 
-  --section-grayscale-N: 0;
-  --section-grayscale-L: 0;
-  --section-grayscale-C: 40%;
+  --section-zoom-B:	3.0;
+  --section-rotate-B:	-10deg;
 
-  --section-zoom-N:	2.0;
-  --section-zoom-C:	1.1;
+  --section-zoom-E:	1.0;
+  --section-rotate-E:	0deg;
 
-  --section-rotate-N:	 6deg;
-  --section-rotate-C:	-3deg;
+  --header-saturate-B:	50%;
+  --header-saturate-E:	0%;
 
-  --pulseImage-Filter-N:    saturate( var(--section-saturate-N)   ) 
-	    		  hue-rotate( var(--section-huerotate-N)  )
-            		  brightness( var(--section-brightness-N) )
-	          	        blur( var(--section-blur-N)       );
+  --header-blur-B: 	0.3em;
+  --header-blur-E: 	0.01em;
 
-  --pulseImage-Filter-C:    saturate( var(--section-saturate-C)   ) 
-	    		  hue-rotate( var(--section-huerotate-C)  )
-            		  brightness( var(--section-brightness-C) )
-	          	        blur( var(--section-blur-C)       );
+  --header-zoom-B:	1.2;
+  --header-zoom-E:	1.0;
 
-  --pulseHeader-Filter-N:   saturate( var(--section-saturate-N)   ) 
-            		  brightness( var(--section-brightness-N) )
-	          	        blur( var(--section-header-blur-N));
+  --pulse-time-A:	3.0s;
+  --pulse-time-B:	1.0s;
 
-  --pulseHeader-Filter-C:   saturate( var(--section-saturate-C)   ) 
-            		  brightness( var(--section-brightness-C) )
-	          	        blur( var(--section-header-blur-C));
+  --pulseImage-Filters-B:   saturate( var(--section-saturate-B)   ) 
+	    		  hue-rotate( var(--section-huerotate-B)  )
+            		  brightness( var(--section-brightness-B) )
+                                blur( var(--section-blur-B) );
 
-  --pulseImage-transform-N:    scale( var(--section-zoom-N)   )
-		              rotate( var(--section-rotate-N) );
-  --pulseImage-transform-C:    scale( var(--section-zoom-C)   )
-		              rotate( var(--section-rotate-C) );
+  --pulseImage-Filters-E:   saturate( var(--section-saturate-E)   ) 
+	    		  hue-rotate( var(--section-huerotate-E)  )
+            		  brightness( var(--section-brightness-E) )
+                           blur( var(--section-blur-E) );
 
-  --pulseHeader-transform-N:   scale( var(--section-zoom-N) );
-  --pulseHeader-transform-C:   scale( var(--section-zoom-C) );
+  --pulseHeader-Filters-B:  saturate( var(--header-saturate-B)   ) 
+            		  brightness( var(--section-brightness-B) )
+			        blur( var(--header-blur-B));
+
+  --pulseHeader-Filters-E:  saturate( var(--header-saturate-E)   ) 
+            		  brightness( var(--section-brightness-E) )
+			        blur( var(--header-blur-E));
+
+  --pulseImage-Transform-B:    scale( var(--section-zoom-B)   )
+		              rotate( var(--section-rotate-B) );
+  --pulseImage-Transform-E:    scale( var(--section-zoom-E)   )
+		              rotate( var(--section-rotate-E) );
+
+  --pulseHeader-Transform-B:   scale( var(--header-zoom-B) );
+  --pulseHeader-Transform-E:   scale( var(--header-zoom-E) );
+
+  --title-blur-B:	0.70em;
+  --title-blur-E:	0.00em;
+
+  --title-brightness-B: 150%;
+  --title-brightness-E: 100%;
+
+
+  --title-zoom-B: 1.5;
+  --title-zoom-E: 1.0;
+
+  --title-rotate-B:  5deg;
+  --title-rotate-E:  0deg;
+
+  --title-Filters-B: brightness( var(--title-brightness-B))
+				blur( var(--title-blur-B) );
+
+  --title-Filters-E: brightness( var(--title-brightness-E))
+				blur( var(--title-blur-E) );
+
+
+  --title-Transform-B: 	scale( var(--title-zoom-B) )
+		              rotate( var(--title-rotate-B) );
+  --title-Transform-E: 	scale( var(--title-zoom-E) )
+		              rotate( var(--title-rotate-E) );
 
   --theme-black-0:	rgb(0,0,0);
   --theme-black-4: 	rgba(0, 0, 0, 0.5);
