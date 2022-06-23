@@ -579,16 +579,16 @@ text-align: center;
     opacity: 0.0;
   }
   100% {
-    opacity: var( --section-opacity-first-E );
+    opacity: var( --image-opacity-first-E );
   }
 }
 
 
 .blog-home-content article:first-child .section-image:hover {
-  opacity: var( --section-opacity-first-H );
+  opacity: var( --image-opacity-first-H );
 }
 .blog-home-content .section-image:hover {
-  opacity: var( --section-opacity-H  );
+  opacity: var( --image-opacity-H  );
 }
 
 
@@ -624,79 +624,79 @@ text-align: center;
 }
 
 
-@keyframes pulseImageFilterKeys {
+@keyframes imageFilterKeys {
  0% {
-       -webkit-filter: var( --pulseImage-Filters-B );
-          -moz-filter: var( --pulseImage-Filters-B );
-            -o-filter: var( --pulseImage-Filters-B );
-               filter: var( --pulseImage-Filters-B );
+       -webkit-filter: var( --image-Filters-B );
+          -moz-filter: var( --image-Filters-B );
+            -o-filter: var( --image-Filters-B );
+               filter: var( --image-Filters-B );
   }
   100% {
-       -webkit-filter: var( --pulseImage-Filters-E );
-          -moz-filter: var( --pulseImage-Filters-E );
-            -o-filter: var( --pulseImage-Filters-E );
-               filter: var( --pulseImage-Filters-E );
+       -webkit-filter: var( --image-Filters-E );
+          -moz-filter: var( --image-Filters-E );
+            -o-filter: var( --image-Filters-E );
+               filter: var( --image-Filters-E );
   } 
 }
 
-@keyframes pulseImageTransKeys {
+@keyframes imageTransKeys {
  0% {
-    -webkit-transform: var( --pulseImage-Transform-B );
-       -moz-transform: var( --pulseImage-Transform-B );
-         -o-transform: var( --pulseImage-Transform-B );
-            transform: var( --pulseImage-Transform-B );
+    -webkit-transform: var( --image-Transform-B );
+       -moz-transform: var( --image-Transform-B );
+         -o-transform: var( --image-Transform-B );
+            transform: var( --image-Transform-B );
   }
   100% {
-    -webkit-transform: var( --pulseImage-Transform-E );
-       -moz-transform: var( --pulseImage-Transform-E );
-         -o-transform: var( --pulseImage-Transform-E );
-            transform: var( --pulseImage-Transform-E );
+    -webkit-transform: var( --image-Transform-E );
+       -moz-transform: var( --image-Transform-E );
+         -o-transform: var( --image-Transform-E );
+            transform: var( --image-Transform-E );
   } 
 }
 
-@keyframes pulseHeaderKeys {
+@keyframes headerKeys {
   0% {
-       -webkit-filter: var( --pulseHeader-Filters-B );
-          -moz-filter: var( --pulseHeader-Filters-B );
-            -o-filter: var( --pulseHeader-Filters-B );
-               filter: var( --pulseHeader-Filters-B );
+       -webkit-filter: var( --header-Filters-B );
+          -moz-filter: var( --header-Filters-B );
+            -o-filter: var( --header-Filters-B );
+               filter: var( --header-Filters-B );
 
-    -webkit-transform: var( --pulseHeader-Transform-B );
-       -moz-transform: var( --pulseHeader-Transform-B );
-         -o-transform: var( --pulseHeader-Transform-B );
-            transform: var( --pulseHeader-Transform-B );
+    -webkit-transform: var( --header-Transform-B );
+       -moz-transform: var( --header-Transform-B );
+         -o-transform: var( --header-Transform-B );
+            transform: var( --header-Transform-B );
   }
   100% {
-       -webkit-filter: var( --pulseHeader-Filters-E );
-          -moz-filter: var( --pulseHeader-Filters-E );
-            -o-filter: var( --pulseHeader-Filters-E );
-               filter: var( --pulseHeader-Filters-E );
+       -webkit-filter: var( --header-Filters-E );
+          -moz-filter: var( --header-Filters-E );
+            -o-filter: var( --header-Filters-E );
+               filter: var( --header-Filters-E );
 
-    -webkit-transform: var( --pulseHeader-Transform-E );
-       -moz-transform: var( --pulseHeader-Transform-E );
-         -o-transform: var( --pulseHeader-Transform-E );
-            transform: var( --pulseHeader-Transform-E );
+    -webkit-transform: var( --header-Transform-E );
+       -moz-transform: var( --header-Transform-E );
+         -o-transform: var( --header-Transform-E );
+            transform: var( --header-Transform-E );
   } 
 }
 
 
 .blog-home-content article:first-child .section-image {
 
-  -webkit-animation-name: pulseImageFilterKeys, pulseImageTransKeys;
+  -webkit-animation-name: imageFilterKeys, imageTransKeys;
   -webkit-animation-timing-function: linear, ease-out;
 
   -webkit-animation-duration: var(--pulse-time-A);
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
 
-  -moz-animation-name: pulseImageFilterKeys, pulseImageTransKeys;
+  -moz-animation-name: imageFilterKeys, imageTransKeys;
   -moz-animation-timing-function: linear, ease-out;
 
   -moz-animation-duration: var(--pulse-time-A);
   -moz-animation-iteration-count: 1;
   -moz-animation-fill-mode: forwards;
 
-  animation-name: pulseImageFilterKeys, pulseImageTransKeys;
+  animation-name: imageFilterKeys, imageTransKeys;
   animation-timing-function: ease-out, ease-out;
 
   animation-duration: var(--pulse-time-A);
@@ -750,7 +750,7 @@ text-align: center;
 .site-header-image .section-image {
   background-position: 50% 27%;
 
-  animation-name: fadein-images, pulseHeaderKeys;
+  animation-name: fadein-images, headerKeys;
   animation-timing-function: ease-out, ease-in-out;
 
   animation-duration: 1s, var(--pulse-time-B);
@@ -826,6 +826,7 @@ video {
 
 
 
+
 .next, .prev,
 .page-numbers {
   display: inline-block;
@@ -837,10 +838,11 @@ video {
   text-transform: uppercase;
   line-height: 1; 
 }
+
 .next, .prev {
   letter-spacing: 0.10em !important;
+  width: 30%;
 }
-
 .nav-links {
   width: 100%;
 }
@@ -850,22 +852,25 @@ span.prev.page-numbers,
 span.next.page-numbers {
   color: var( --theme-bg-0 );
 }
+
+
 span.prev.page-numbers,
 a.prev.page-numbers {
-  padding-left: 1.0em;
-  padding-right: 4em;
   text-align: left;
+  padding-left: 0;
+  padding-right: 0;
 }
 span.next.page-numbers,
 a.next.page-numbers {
-  padding-left: 4em;
-  padding-right: 1.0em;
   text-align: right;
+  padding-left: 0;
+  padding-right: 0;
 }
+
 a.page-numbers {
-  letter-spacing: 0.5em;
-  padding-left: 0.5em;
   text-align: center;
+  padding-left: 0.5em;
+  letter-spacing: 0.5em;
 }
 
 span.page-numbers.current {
@@ -898,10 +903,10 @@ h4 a, h5 a, h6 a {
   font-size: 0.85em;
 }
 
+
 .navigation.pagination {
   padding-top: 2.0em;
   margin: 0 auto;
-  display: block;
   max-width: var( --theme-main-width );
   text-align: center;
 }
@@ -977,32 +982,31 @@ li > ol {
 
 
 :root {
-  --theme-main-width:	820px;
+  --theme-main-width:	786px;
 
-  --section-blur-B:	0.50em;
-  --section-blur-E:	0.15em;
+  --image-blur-B:	0.50em;
+  --image-blur-E:	0.15em;
 
+  --image-opacity-first-E: 0.6;
+  --image-opacity-first-H: 0.6;
 
-  --section-opacity-first-E: 0.6;
-  --section-opacity-first-H: 0.6;
+  --image-opacity-E: 0.6;
+  --image-opacity-H: 0.7;
 
-  --section-opacity-E: 0.6;
-  --section-opacity-H: 0.7;
+  --image-saturate-B: 20%;
+  --image-saturate-E: 0%;
 
-  --section-saturate-B: 20%;
-  --section-saturate-E: 0%;
+  --image-huerotate-B: 360.0deg;
+  --image-huerotate-E: 360.0deg;
 
-  --section-huerotate-B: 360.0deg;
-  --section-huerotate-E: 360.0deg;
+  --image-brightness-B: 100%;
+  --image-brightness-E: 90%;
 
-  --section-brightness-B: 100%;
-  --section-brightness-E: 90%;
+  --image-zoom-B:	3.0;
+  --image-rotate-B:	-10deg;
 
-  --section-zoom-B:	3.0;
-  --section-rotate-B:	-10deg;
-
-  --section-zoom-E:	1.0;
-  --section-rotate-E:	0deg;
+  --image-zoom-E:	1.0;
+  --image-rotate-E:	0deg;
 
   --header-saturate-B:	50%;
   --header-saturate-E:	0%;
@@ -1016,43 +1020,42 @@ li > ol {
   --pulse-time-A:	3.0s;
   --pulse-time-B:	1.0s;
 
-  --pulseImage-Filters-B:   saturate( var(--section-saturate-B)   ) 
-	    		  hue-rotate( var(--section-huerotate-B)  )
-            		  brightness( var(--section-brightness-B) )
-                                blur( var(--section-blur-B) );
+  --image-Filters-B:   saturate( var(--image-saturate-B)   ) 
+	    		  hue-rotate( var(--image-huerotate-B)  )
+            		  brightness( var(--image-brightness-B) )
+                                blur( var(--image-blur-B) );
 
-  --pulseImage-Filters-E:   saturate( var(--section-saturate-E)   ) 
-	    		  hue-rotate( var(--section-huerotate-E)  )
-            		  brightness( var(--section-brightness-E) )
-                           blur( var(--section-blur-E) );
+  --image-Filters-E:   saturate( var(--image-saturate-E)   ) 
+	    		  hue-rotate( var(--image-huerotate-E)  )
+            		  brightness( var(--image-brightness-E) )
+                           blur( var(--image-blur-E) );
 
-  --pulseHeader-Filters-B:  saturate( var(--header-saturate-B)   ) 
-            		  brightness( var(--section-brightness-B) )
+  --header-Filters-B:  saturate( var(--header-saturate-B)   ) 
+            		  brightness( var(--image-brightness-B) )
 			        blur( var(--header-blur-B));
 
-  --pulseHeader-Filters-E:  saturate( var(--header-saturate-E)   ) 
-            		  brightness( var(--section-brightness-E) )
+  --header-Filters-E:  saturate( var(--header-saturate-E)   ) 
+            		  brightness( var(--image-brightness-E) )
 			        blur( var(--header-blur-E));
 
-  --pulseImage-Transform-B:    scale( var(--section-zoom-B)   )
-		              rotate( var(--section-rotate-B) );
-  --pulseImage-Transform-E:    scale( var(--section-zoom-E)   )
-		              rotate( var(--section-rotate-E) );
+  --image-Transform-B:    scale( var(--image-zoom-B)   )
+		              rotate( var(--image-rotate-B) );
+  --image-Transform-E:    scale( var(--image-zoom-E)   )
+		              rotate( var(--image-rotate-E) );
 
-  --pulseHeader-Transform-B:   scale( var(--header-zoom-B) );
-  --pulseHeader-Transform-E:   scale( var(--header-zoom-E) );
+  --header-Transform-B:   scale( var(--header-zoom-B) );
+  --header-Transform-E:   scale( var(--header-zoom-E) );
 
   --title-blur-B:	0.70em;
   --title-blur-E:	0.00em;
 
-  --title-brightness-B: 150%;
+  --title-brightness-B: 100%;
   --title-brightness-E: 100%;
 
-
-  --title-zoom-B: 1.5;
+  --title-zoom-B: 0.9;
   --title-zoom-E: 1.0;
 
-  --title-rotate-B:  5deg;
+  --title-rotate-B:  0deg;
   --title-rotate-E:  0deg;
 
   --title-Filters-B: brightness( var(--title-brightness-B))
