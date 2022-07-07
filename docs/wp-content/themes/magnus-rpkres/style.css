@@ -920,11 +920,17 @@ h4 a, h5 a, h6 a {
   }
 }
 
-details[open] summary {
-  color: var( --theme-grey-6 );
+
+details summary {
+  outline: none;
 }
+
+
 details summary {
   color: var( --theme-red-4 );
+}
+details[open] summary {
+  color: var( --theme-grey-2 );
 }
 
 details[open] > *:not(summary) {
@@ -938,11 +944,26 @@ details > summary {
 
 
 
+
+summary:hover {
+  color: var( --theme-grey-1 );
+}
+
+
+details summary {
+  display: list-item;
+}
+
+
+
+
+
 .events-details ul {
   margin-top: 1.0em;
   margin-left: -0.6em;
   margin-bottom: 3.0em;
 }
+
 
 .events-summary {
   font-family: "KFMono", serif;
@@ -951,6 +972,7 @@ details > summary {
   margin-top: -1em;
   text-transform: uppercase;
 }
+
 .events-summary:before {
   margin-left: 0.2em;
   content: "";
