@@ -911,6 +911,33 @@ h4 a, h5 a, h6 a {
   text-align: center;
 }
 
+
+
+@keyframes details-show {
+  from {
+    opacity:.0;
+    transform: scale(0.9);
+  }
+}
+
+details[open] summary {
+  color: var( --theme-grey-6 );
+}
+details summary {
+  color: var( --theme-red-4 );
+}
+
+details[open] > *:not(summary) {
+  animation: details-show 150ms ease-in-out;
+}
+
+
+details > summary {
+  cursor: pointer;
+}
+
+
+
 .events-details ul {
   margin-top: 1.0em;
   margin-left: -0.6em;
@@ -918,7 +945,6 @@ h4 a, h5 a, h6 a {
 }
 
 .events-summary {
-  color: var( --theme-grey-6 );
   font-family: "KFMono", serif;
   font-weight: 400;
   font-size: 0.8em;
