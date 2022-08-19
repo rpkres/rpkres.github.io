@@ -3,16 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- Apple -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
+
 <!-- tell the scumbags to f*ck off -->
-<meta name='robots' content='noindex,nofollow,noarchive' />
-<meta name='googlebot' content='noindex,nofollow,noarchive' />
+<meta name='X-Robots-Tag' content='none,noindex,nofollow,noarchive' />
+<meta name='robots' content='none,noindex,nofollow,noarchive' />
+<meta name='googlebot' content='none,noindex,nofollow,noarchive' />
+<meta name='googlebot-news' content='none,noindex,nofollow,noarchive' />
+
+<!-- don't allow ISP/sCDNs to convert image formats etc. -->
+<meta name='Cache-Control' content='notransform' />
+
+<!-- hand set CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; script-src 'self';">
+<meta name='referrer' content='no-referrer'>
+
 
 <title>rpkres.github.io</title>
-<meta name='robots' content='noindex,nofollow,noarchive' />
 <link rel='stylesheet' id='magnus-style-css'  href='https://rpkres.github.io/wp-content/themes/magnus-rpkres/style.css' type='text/css' media='all' />
 
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
