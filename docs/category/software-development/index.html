@@ -3,9 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- tell the scumbags to f*ck off -->
-<meta name='robots' content='noindex,nofollow,noarchive' />
-<meta name='googlebot' content='noindex,nofollow,noarchive' />
+
+<!-- Apple - this should open as a web app when bookmark is saved on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<!-- tell scumbag scrapers to f*ck off -->
+<meta name='robots' content='none,noindex,nofollow,noarchive' />
+<meta name='googlebot' content='none,noindex,nofollow,noarchive' />
+<meta name='googlebot-news' content='none,noindex,nofollow,noarchive' />
+
+<meta name='Twitterbot' content='none,noindex,nofollow,noarchive' />
+<meta name='FacebookBot' content='none,noindex,nofollow,noarchive' />
+<meta name='facebookexternalhit' content='none,noindex,nofollow,noarchive' />
+
+<!-- don't allow ISP/sCDNs to convert image formats etc. -->
+<meta name='Cache-Control' content='notransform' />
+
+<!-- hand set CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://rpkres.github.io ; style-src 'self' 'unsafe-inline' https://rpkres.github.io;">
+
+<!-- more privacy/security based tags -->
+<meta name='referrer' content='no-referrer'>
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+
+
 
 <title>Software Development &#8211; rpkres.github.io</title>
 <meta name='robots' content='noindex,nofollow,noarchive' />

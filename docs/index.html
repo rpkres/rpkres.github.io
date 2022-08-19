@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Apple -->
+<!-- Apple - this should open as a web app when bookmark is saved on iOS -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
 
 <!-- tell scumbag scrapers to f*ck off -->
-<meta name='X-Robots-Tag' content='none,noindex,nofollow,noarchive' />
 <meta name='robots' content='none,noindex,nofollow,noarchive' />
 <meta name='googlebot' content='none,noindex,nofollow,noarchive' />
 <meta name='googlebot-news' content='none,noindex,nofollow,noarchive' />
+
 <meta name='Twitterbot' content='none,noindex,nofollow,noarchive' />
 <meta name='FacebookBot' content='none,noindex,nofollow,noarchive' />
 <meta name='facebookexternalhit' content='none,noindex,nofollow,noarchive' />
@@ -23,10 +23,15 @@
 
 <!-- hand set CSP -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://rpkres.github.io ; style-src 'self' 'unsafe-inline' https://rpkres.github.io;">
+
+<!-- more privacy/security based tags -->
 <meta name='referrer' content='no-referrer'>
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+
 
 
 <title>rpkres.github.io</title>
+<meta name='robots' content='noindex,nofollow,noarchive' />
 <link rel='stylesheet' id='magnus-style-css'  href='https://rpkres.github.io/wp-content/themes/magnus-rpkres/style.css' type='text/css' media='all' />
 
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
