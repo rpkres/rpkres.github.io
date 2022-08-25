@@ -25,7 +25,12 @@
 
 <!-- hand set CSP -->
 <!-- not sure if this stops js injection from some browsers on iOS -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://rpkres.github.io ; style-src 'self' 'unsafe-inline' https://rpkres.github.io;">
+<meta http-equiv="Content-Security-Policy" content="
+default-src 'self' filesystem https://rpkres.github.io ; 
+style-src 'self' 'unsafe-inline' filesystem https://rpkres.github.io;
+img-src 'self' filesystem https://rpkres.github.io;
+script-src 'none';
+">
 
 <!-- more privacy/security based tags -->
 <meta name='referrer' content='no-referrer'>
@@ -172,8 +177,6 @@
 <h1 class="footer-logo">
 <a href="index.html#top"><img src="../../wp-content/uploads/sites/10/2020/10/MonogramBx64.png"></a>
 </h1>
-<!-- <img height="64px" src="/wp/sites/rpkres/wp-content/uploads/sites/10/2020/10/MonogramBborderBx64.png"></a> -->
-
 <!-- </center> -->
 
 <nav id="site-navigation" class="footer-navigation" role="navigation">
