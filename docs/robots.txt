@@ -1,6 +1,19 @@
 User-agent: *
 Disallow: /
 #
-# Do not allow facebook skum to access any part of your site
+# Do not allow facebook and other scumbags to access the site
+#
+User-agent: FacebookBot
+Disallow: /
+#
 User-agent: facebookexternalhit
+Disallow: /
+#
+User-agent: googlebot
+Disallow: /
+#
+User-agent: googlebot-news
+Disallow: /
+#
+User-agent: Twitterbot
 Disallow: /
